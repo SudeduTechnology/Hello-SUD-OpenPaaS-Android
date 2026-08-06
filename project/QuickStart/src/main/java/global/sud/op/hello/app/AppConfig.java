@@ -10,6 +10,6 @@ public class AppConfig {
 
 
     public static String TEST_GAME_ID = "2077946171923288065";
-//    public static String TEST_GAME_URL = "http://192.168.2.156:8080/200000200.zip";
+    public static String TEST_GAME_URL = "http://192.168.2.156:8080/200000200.zip";
 
 }
