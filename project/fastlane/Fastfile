@@ -1,0 +1,118 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+    OUTPUT_DIR = "jenkins_build"
+
+    desc "Android Project Clean"
+    lane :clean do
+        gradle(task: "clean")
+    end
+
+    desc "Android-test 测试包"
+    lane :fat do |options|
+        parentOutputDir = OUTPUT_DIR
+        versionCode=options[:code]
+        moduleName=options[:moduleName]
+        nftEnv=options[:nftEnv]
+        mgpEnv=options[:mgpEnv]
+        baseUrlConfig=options[:baseUrlConfig]
+        baseUrl=options[:baseUrl]
+        interactBaseUrl=options[:interactBaseUrl]
+        gameBaseUrl=options[:gameBaseUrl]
+        buildType=options[:buildType]
+        flavor=options[:flavor]
+        puts versionCode
+        if moduleName.nil? || moduleName.empty?
+            puts "moduleName is empty"
+            moduleName = "app"
+        end
+        if nftEnv.nil? || nftEnv.empty?
+            puts "nftEnv is empty"
+            nftEnv = "pro"
+        end
+        if mgpEnv.nil? || mgpEnv.empty?
+            puts "mgpEnv is empty"
+            mgpEnv = "pro"
+        end
+        # outputDir = parentOutputDir + "/fat/" + versionCode
+        # puts outputDir
+        gradle(
+            task: ":" + moduleName + ":assemble",
+            build_type:buildType,
+            flavor:flavor,
+            print_command: true,
+            properties: {
+                "versionCode" => versionCode,
+                "nftEnv" => nftEnv,
+                "mgpEnv" => mgpEnv,
+                "baseUrl" => baseUrl,
+                "interactBaseUrl" => interactBaseUrl,
+                "gameBaseUrl" => gameBaseUrl,
+                "baseUrlConfig" => baseUrlConfig
+            }
+        )
+    end
+
+    desc "Android-release 发布包"
+    lane :pro do |options|
+        parentOutputDir = OUTPUT_DIR
+        versionCode=options[:code]
+        baseUrl=options[:baseUrl]
+        interactBaseUrl=options[:interactBaseUrl]
+        gameBaseUrl=options[:gameBaseUrl]
+        buglyAppId=options[:buglyAppId]
+        gameIsTestEnv=options[:gameIsTestEnv]
+        jksPropertyPath=options[:jksPropertyPath]
+        flavor=options[:flavor]
+        puts versionCode
+        # outputDir = parentOutputDir + "/fat/" + versionCode
+        # puts outputDir
+        gradle(
+            task: ":app:assemble",
+            build_type:"Release",
+            flavor:flavor,
+            print_command: true,
+            properties: {
+                "versionCode" => versionCode,
+                "jksPropertyPath" => jksPropertyPath,
+                "baseUrlConfig" => "pro",
+                "nftEnv" => "pro",
+                "mgpEnv" => "pro",
+                "baseUrl" => baseUrl,
+                "interactBaseUrl" => interactBaseUrl,
+                "gameBaseUrl" => gameBaseUrl,
+                "buglyAppId" => buglyAppId,
+                "gameIsTestEnv" => gameIsTestEnv
+            }
+        )
+    end
+
+    desc "上传符号表到bugly"
+    lane :uploadMapping do |options|
+        # 上传符号表到bugly
+        versionCode=options[:code]
+        buglyAppId=options[:buglyAppId]
+        buglyAppKey=options[:buglyAppKey]
+        versionName = android_get_version_name(
+            gradle_file: "build.gradle"
+        )
+        outputMappingDir = "../app/build/outputs/mapping/*/mapping.txt"
+        sh("java -jar ../../tool/bugly/buglyqq-upload-symbol.jar -appid #{buglyAppId} -appkey #{buglyAppKey} -bundleid tech.sud.mgp.hello -version #{versionName}.#{versionCode} -platform Android -inputMapping #{outputMappingDir}")
+    end
+
+end

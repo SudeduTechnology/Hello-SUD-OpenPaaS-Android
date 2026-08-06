@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/view_logo"
+            android:layout_width="52dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_default_avatar"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_top_title"
+            android:textColor="#13141a"
+            android:textSize="18sp"
+            android:layout_marginStart="6dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/view_logo"
+            app:layout_constraintBottom_toBottomOf="@id/view_logo"
+            app:layout_constraintStart_toEndOf="@id/view_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:text="@string/main_top_url"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_round_66dbdeec"
+            app:layout_constraintTop_toTopOf="@id/view_logo"
+            app:layout_constraintBottom_toBottomOf="@id/view_logo"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingHorizontal="11dp"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <Button
+            android:id="@+id/btn_change_app_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="修改appId"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_game_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="通过gameId启动游戏"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_game_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="通过gameSignature启动游戏"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_load_old_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="加载存量游戏包"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_load_game_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:text="通过url加载游戏包"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
