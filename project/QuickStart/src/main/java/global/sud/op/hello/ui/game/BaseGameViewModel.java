@@ -2,6 +2,7 @@ package global.sud.op.hello.ui.game;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.Handler;
@@ -197,11 +198,21 @@ public abstract class BaseGameViewModel {
             }
 
             @Override
-            public void onCreated(SUDRTGameHandle handle, SUDOPGameInfo var2) {
+            public void onCreated(SUDRTGameHandle handle, SUDOPGameInfo gameInfo) {
                 logD("getSUDOPStartGameListener.onCreated， gameId:" + gameId + " mGameId:" + mGameId);
                 if (!gameId.equals(mGameId)) {
                     return;
                 }
+                if (gameInfo != null) {
+                    if ("landscape".equals(gameInfo.deviceOrientation)) {
+                        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+                    } else if ("portrait".equals(gameInfo.deviceOrientation)) {
+                        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
+                    } else if ("auto".equals(gameInfo.deviceOrientation)) {
+                        activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
+                    }
+                }
+
                 setGameStartOptions(handle);
                 if (sudOPWrappedClient != null) {
                     SUDOP.registerWrappedClient(handle, sudOPWrappedClient);

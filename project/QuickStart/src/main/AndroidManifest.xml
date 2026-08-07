@@ -88,15 +88,6 @@
             tools:ignore="LockedOrientationActivity" />
 
         <activity
-            android:name=".ui.game.QuickStartGameActivityH"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:exported="false"
-            android:launchMode="singleTask"
-            android:screenOrientation="unspecified"
-            android:windowSoftInputMode="adjustPan"
-            tools:ignore="LockedOrientationActivity" />
-
-        <activity
             android:name=".ui.main.LoadGameSignatureActivity"
             android:exported="false"
             android:launchMode="singleTask"

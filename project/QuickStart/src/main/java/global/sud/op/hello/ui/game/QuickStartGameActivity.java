@@ -119,13 +119,7 @@ public class QuickStartGameActivity extends BaseActivity {
      */
     public static void start(Context context, GameModel model) {
         Log.d(TAG, "start");
-        Class<?> targetActivity = null;
-        if (model.orientationMode == GameModel.ORIENTATION_LANDSCAPE) {
-            targetActivity = QuickStartGameActivityH.class;
-        }else{
-            targetActivity = QuickStartGameActivity.class;
-        }
-        Intent intent = new Intent(context, targetActivity);
+        Intent intent = new Intent(context, QuickStartGameActivity.class);
         intent.putExtra("GameModel", model);
         context.startActivity(intent);
     }
