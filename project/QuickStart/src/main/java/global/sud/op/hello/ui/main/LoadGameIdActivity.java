@@ -11,6 +11,8 @@ import global.sud.op.hello.app.AppConfig;
 import global.sud.op.hello.common.base.BaseActivity;
 import global.sud.op.hello.common.utils.GlobalSP;
 import global.sud.op.hello.ui.game.QuickStartGameActivity;
+import global.sud.op.hello.ui.game.sudedu.model.GameFeedItem;
+import global.sud.op.hello.ui.game.sudedu.repository.FeedRepository;
 import global.sud.op.runtime.core.model.SUDOPGamePathType;
 
 public class LoadGameIdActivity extends BaseActivity {
@@ -41,11 +43,12 @@ public class LoadGameIdActivity extends BaseActivity {
             ToastUtils.showShort("请输入gameId");
             return;
         }
-        GameModel gameModel = new GameModel();
-        gameModel.gameId = gameId;
-        gameModel.pathType = SUDOPGamePathType.GAME_ID;
-        // 测试代码，固定横屏
-        gameModel.orientationMode = GameModel.ORIENTATION_LANDSCAPE;
+        GameFeedItem gameFeedItem = FeedRepository.getInstance().getGameFeedItemByGameId(gameId);
+        if(gameFeedItem == null){
+            ToastUtils.showShort("请输入正确的gameId");
+            return;
+        }
+        GameModel gameModel = gameFeedItem.toGameModel();
         QuickStartGameActivity.start(this, gameModel);
         GlobalSP.getSP().put(GlobalSP.KEY_GAME_ID, gameId);
     }

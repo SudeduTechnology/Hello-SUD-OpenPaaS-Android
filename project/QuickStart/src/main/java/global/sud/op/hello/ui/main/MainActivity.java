@@ -6,6 +6,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import com.blankj.utilcode.util.ToastUtils;
+
 import global.sud.gi.core.ISUDAPPD;
 import global.sud.op.hello.R;
 import global.sud.op.hello.app.AppConfig;
@@ -13,6 +15,7 @@ import global.sud.op.hello.common.base.BaseActivity;
 import global.sud.op.hello.common.http.param.BaseUrlManager;
 import global.sud.op.hello.common.http.param.IBaseUrl;
 import global.sud.op.hello.common.utils.GlobalSP;
+import global.sud.op.hello.ui.game.sudedu.repository.FeedRepository;
 import global.sud.op.hello.ui.game.widget.ChangeAppIdDialog;
 import global.sud.op.runtime.core.SUDOP;
 
@@ -36,6 +39,14 @@ public class MainActivity extends BaseActivity {
         super.initData();
         AppConfig.SudGIP_APP_ID = GlobalSP.getSP().getString(GlobalSP.KEY_APP_ID, AppConfig.SudGIP_APP_ID);
         AppConfig.SudGIP_APP_KEY = GlobalSP.getSP().getString(GlobalSP.KEY_APP_KEY, AppConfig.SudGIP_APP_KEY);
+        new Thread(() -> {
+            try {
+                FeedRepository.getInstance().fetchLinkedGames();
+            } catch (Exception e) {
+                e.printStackTrace();
+                runOnUiThread(() -> ToastUtils.showLong(e.getMessage()));
+            }
+        }).start();
     }
 
     @Override
