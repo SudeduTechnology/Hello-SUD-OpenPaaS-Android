@@ -39,17 +39,12 @@ public class MyApplication extends Application {
             configToast();
             initCrashHandler();
         }
-        configBugly();
     }
 
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         SUDGILanguageConfig.restoreApplicationLanguage();
-    }
-
-    private void configBugly() {
-//        CrashReport.initCrashReport(getApplicationContext(), "46a055fe03", true);
     }
 
     private void initCrashHandler() {

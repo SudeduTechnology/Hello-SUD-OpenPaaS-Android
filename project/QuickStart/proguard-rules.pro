@@ -31,6 +31,3 @@
 -keep class retrofit2.converter.gson.** {*;}
 -keep class io.reactivex.rxjava3.** {*;}
 
-# bugly混淆
--dontwarn com.tencent.bugly.**
--keep public class com.tencent.bugly.**{*;}
