@@ -1,0 +1,54 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 背景轨道，半透明白色 -->
+    <item
+        android:id="@android:id/background"
+        android:height="4dp"
+        android:gravity="center_vertical">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp" />
+            <solid android:color="#66FFFFFF" />
+        </shape>
+
+    </item>
+
+    <!-- 二级进度，不需要的话透明 -->
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:height="4dp"
+        android:gravity="center_vertical">
+
+        <clip
+            android:clipOrientation="horizontal"
+            android:gravity="left">
+
+            <shape android:shape="rectangle">
+                <corners android:radius="2dp" />
+                <solid android:color="#00000000" />
+            </shape>
+
+        </clip>
+
+    </item>
+
+    <!-- 已播放进度，白色 -->
+    <item
+        android:id="@android:id/progress"
+        android:height="4dp"
+        android:gravity="center_vertical">
+
+        <clip
+            android:clipOrientation="horizontal"
+            android:gravity="left">
+
+            <shape android:shape="rectangle">
+                <corners android:radius="2dp" />
+                <solid android:color="#FFFFFFFF" />
+            </shape>
+
+        </clip>
+
+    </item>
+
+</layer-list>

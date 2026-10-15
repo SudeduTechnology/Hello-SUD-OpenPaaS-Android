@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_op_wck_image_picker_camera">Take Photo</string>
+    <string name="sud_op_wck_image_picker_album">Choose from Photos</string>
+    <string name="sud_op_wck_common_cancel">Cancel</string>
+    <string name="sud_op_wck_common_confirm">Confirm</string>
+    <string name="sud_op_wck_loading_default">Loading…</string>
+    <string name="sud_op_wck_toast_success_default">Success</string>
+    <string name="sud_op_wck_error_no_top_view_controller">Cannot find an available view controller.</string>
+    <string name="sud_op_wck_error_invalid_source_types">Image sources are empty or invalid.</string>
+    <string name="sud_op_wck_error_cannot_present_controller">Unable to present the image picker.</string>
+    <string name="sud_op_wck_error_user_cancelled">The user cancelled the operation.</string>
+    <string name="sud_op_wck_error_camera_permission_denied">Camera access is denied.</string>
+    <string name="sud_op_wck_error_camera_unavailable">The camera is unavailable on this device.</string>
+    <string name="sud_op_wck_error_photo_permission_denied">Photos access is denied.</string>
+    <string name="sud_op_wck_error_photo_unavailable">Photos are unavailable on this device.</string>
+    <string name="sud_op_wck_error_load_image_failed">Failed to load the image.</string>
+    <string name="sud_op_wck_error_no_valid_images">No valid images were found.</string>
+    <string name="sud_op_wck_error_get_image_failed">Failed to retrieve the image.</string>
+    <string name="sud_op_wck_error_image_nil">The image is empty.</string>
+    <string name="sud_op_wck_error_generate_image_data_failed">Failed to generate image data.</string>
+    <string name="sud_op_wck_error_temp_directory_missing">The temporary directory was not found.</string>
+    <string name="sud_op_wck_error_file_path_empty">The file path is empty.</string>
+    <string name="sud_op_wck_error_unknown">Unknown error.</string>
+    <string name="sud_op_wck_error_unsupported_file_type">Unsupported file type: %1$s</string>
+    <string name="sud_op_wck_error_file_path_not_found">The file path does not exist.</string>
+    <string name="sud_op_wck_error_save_photo_failed">Failed to save the image to Photos.</string>
+    <string name="sud_op_wck_error_compress_image_failed">Failed to process the image.</string>
+    <string name="sud_op_wck_error_brightness_out_of_range">The screen brightness value is out of range.</string>
+</resources>

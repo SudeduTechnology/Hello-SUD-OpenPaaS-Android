@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/view_logo"
+            android:layout_width="52dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_default_avatar"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sud_demo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_top_title"
+            android:textColor="#13141a"
+            android:textSize="18sp"
+            android:layout_marginStart="6dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/view_logo"
+            app:layout_constraintBottom_toBottomOf="@id/view_logo"
+            app:layout_constraintStart_toEndOf="@id/view_logo" />
+
+        <TextView
+            android:id="@+id/sud_demo_build_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#13141a"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            app:layout_constraintStart_toEndOf="@id/sud_demo_title"
+            app:layout_constraintEnd_toStartOf="@id/sud_demo_site"
+            app:layout_constraintTop_toTopOf="@id/view_logo"
+            app:layout_constraintBottom_toBottomOf="@id/view_logo" />
+
+        <TextView
+            android:id="@+id/sud_demo_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:text="@string/main_top_url"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_round_66dbdeec"
+            app:layout_constraintTop_toTopOf="@id/view_logo"
+            app:layout_constraintBottom_toBottomOf="@id/view_logo"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="11dp"
+            android:paddingBottom="16dp"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/sud_gi_language_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/sud_gi_language_title"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_op"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/main_op"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btn_gi_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/main_gi_game"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

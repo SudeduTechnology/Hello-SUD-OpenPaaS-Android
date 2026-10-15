@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_gi_language_entry">Configurações de idioma: %1$s</string>
+    <string name="sud_gi_language_title">Idioma</string>
+    <string name="sud_gi_language_system">Seguir o sistema</string>
+    <string name="sud_gi_language_notice">Toque em um idioma para aplicá-lo imediatamente. A escolha será salva para a próxima abertura. O idioma do app muda para testar os textos padrão do Wrapper; textos fornecidos pelos jogos não são traduzidos automaticamente.</string>
+    <string name="app_name">SUDOP</string>
+    <string name="net_error_hint">Erro de rede. Verifique sua conexão.</string>
+    <string name="common_camera">Câmera</string>
+    <string name="common_storage">Armazenamento</string>
+    <string name="common_correlation">relacionado</string>
+    <string name="common_record_audio">Microfone</string>
+    <string name="common_phone">Telefone</string>
+    <string name="common_setting_permission_info">Ative a permissão de %1$s nas Configurações para usar normalmente os recursos do %2$s.</string>
+    <string name="main_top_title">SUDGI</string>
+    <string name="main_top_url">www.sud.tech</string>
+    <string name="select_game">Selecionar um jogo</string>
+    <string name="audio_chat_hint">Diga alguma coisa…</string>
+    <string name="audio_gameing">Em jogo</string>
+    <string name="close_game">Fechar jogo</string>
+    <string name="room_name">Vamos jogar juntos</string>
+    <string name="enter">Entrar</string>
+    <string name="room_number">Número da sala</string>
+    <string name="exit_room">Sair da sala</string>
+    <string name="main_gi_game">Jogo GI</string>
+    <string name="main_op">Jogo OpenPaas</string>
+    <string name="op_initializing_sdk">Inicializando serviço de jogos…</string>
+    <string name="op_preparing_account">Preparando conta de jogo…</string>
+    <string name="op_loading_games">Carregando jogos…</string>
+    <string name="op_empty_games">Nenhum jogo disponível</string>
+    <string name="op_retry">Tentar novamente</string>
+    <string name="op_sdk_init_failed">Falha ao inicializar o serviço de jogos (%1$d)</string>
+    <string name="op_login_failed">Falha ao entrar na conta de jogo (%1$d)</string>
+    <string name="op_game_list_failed">Falha ao carregar a lista de jogos (%1$d)</string>
+    <string name="op_game_icon">Ícone do jogo</string>
+    <string name="op_game_title">Jogo OpenPaas</string>
+    <string name="op_game_loading">Entrando no jogo…</string>
+    <string name="op_game_loading_progress">Carregando jogo %1$d%%</string>
+    <string name="op_game_start_failed">Não foi possível entrar no jogo (%1$d)</string>
+    <string name="common_back">Voltar</string>
+    <string name="toast_sudm_init_failed">Falha na inicialização do SUDM: %1$d (%2$s)</string>
+    <string name="toast_crash_quit">O app falhou e será fechado.</string>
+    <string name="ad_hot_games">Jogos populares recomendados</string>
+    <string name="ad_banner_description">Ótimas recompensas e jogabilidade fácil. Experimente agora.</string>
+    <string name="ad_download_now">Baixar agora</string>
+    <string name="ad_image_placeholder">Imagem</string>
+    <string name="ad_recommended_mini_games">Minijogos em destaque</string>
+    <string name="ad_mini_games">Minijogos recomendados</string>
+    <string name="ad_more_fun">Mais\nDiversão</string>
+    <string name="ad_label">Anúncio</string>
+    <string name="ad_interstitial_title">Dramas Curtos Grátis Hongguo</string>
+    <string name="ad_interstitial_description">Aproveite uma enorme coleção de dramas curtos no Hongguo.</string>
+    <string name="ad_watch_short_dramas_free">Assistir a dramas curtos grátis</string>
+    <string name="ad_interstitial_footer">Privacidade | Permissões | Sobre | V7.1.5… | Beijing Bimoliuxiang Technology Co., Ltd.</string>
+    <string name="ad_back">‹ Voltar</string>
+    <string name="ad_native_app_name">Nome do app</string>
+    <string name="ad_native_app_description">Descrição do app</string>
+    <string name="ad_install">Instalar</string>
+    <string name="ad_native_footer">3.1.5 | XXXX Ltda. | Privacidade | Permissões</string>
+    <string name="ad_reward_countdown">Assista por %1$d s para ganhar a recompensa</string>
+    <string name="ad_reward_earned">Requisito da recompensa cumprido</string>
+    <string name="ad_reward_exit_message">Assista por mais %1$d segundos para ganhar a recompensa. Sair agora?</string>
+    <string name="ad_close_video">Fechar vídeo</string>
+    <string name="ad_continue_watching">Continuar assistindo</string>
+    <string name="ad_sound_on">Som</string>
+    <string name="ad_sound_off">Mudo</string>
+    <string-array name="ad_portal_game_names">
+        <item>Explosão do Coelho</item>
+        <item>Mini Blocos…</item>
+        <item>Estilista de Ídolos</item>
+        <item>Representante da Turma</item>
+        <item>Corrida do Sushi</item>
+        <item>Escultura em Madeira 6</item>
+        <item>Banquete dos Guerreiros</item>
+        <item>Mestre dos Pés</item>
+        <item>Explosão Nacional…</item>
+    </string-array>
+    <string-array name="ad_portal_icon_texts">
+        <item>C</item>
+        <item>B</item>
+        <item>I</item>
+        <item>T</item>
+        <item>S</item>
+        <item>M</item>
+        <item>G</item>
+        <item>P</item>
+        <item>E</item>
+    </string-array>
+    <string-array name="ad_drawer_game_names">
+        <item>Bola dos Sonhos Cósmicos</item>
+        <item>Besouro Ciclone</item>
+        <item>Heróis da Zona de Guerra</item>
+        <item>Mundo das Viagens</item>
+        <item>Super Vaca</item>
+        <item>Não Pise nos Blocos</item>
+    </string-array>
+    <string-array name="ad_drawer_icon_texts">
+        <item>C</item>
+        <item>B</item>
+        <item>H</item>
+        <item>V</item>
+        <item>V</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="ad_banner_game_names">
+        <item>Mestre dos Pés</item>
+        <item>Escultura em Madeira 6</item>
+        <item>Explosão do Coelho</item>
+        <item>Blocos de Piano 2</item>
+        <item>Representante da Turma</item>
+    </string-array>
+    <string-array name="ad_banner_icon_texts">
+        <item>P</item>
+        <item>M</item>
+        <item>C</item>
+        <item>2</item>
+        <item>T</item>
+    </string-array>
+    <string name="sud_gi_language_custom">Personalizado</string>
+    <string name="sud_gi_language_custom_hint">Código do idioma, ex.: vi-VN</string>
+    <string name="sud_gi_language_custom_empty">Insira um código de idioma</string>
+    <string name="sud_gi_language_custom_invalid">Código de idioma inválido, ex.: vi-VN</string>
+</resources>

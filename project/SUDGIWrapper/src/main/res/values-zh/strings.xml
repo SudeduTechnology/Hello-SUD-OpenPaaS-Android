@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_op_wck_image_picker_camera">拍照</string>
+    <string name="sud_op_wck_image_picker_album">从手机相册选择</string>
+    <string name="sud_op_wck_common_cancel">取消</string>
+    <string name="sud_op_wck_common_confirm">确认</string>
+    <string name="sud_op_wck_loading_default">加载中…</string>
+    <string name="sud_op_wck_toast_success_default">成功</string>
+    <string name="sud_op_wck_error_no_top_view_controller">找不到可用的页面控制器</string>
+    <string name="sud_op_wck_error_invalid_source_types">图片来源为空或无效</string>
+    <string name="sud_op_wck_error_cannot_present_controller">无法打开图片选择页面</string>
+    <string name="sud_op_wck_error_user_cancelled">用户已取消</string>
+    <string name="sud_op_wck_error_camera_permission_denied">相机权限未开启</string>
+    <string name="sud_op_wck_error_camera_unavailable">当前设备无法使用相机</string>
+    <string name="sud_op_wck_error_photo_permission_denied">相册权限未开启</string>
+    <string name="sud_op_wck_error_photo_unavailable">当前设备无法使用相册</string>
+    <string name="sud_op_wck_error_load_image_failed">图片加载失败</string>
+    <string name="sud_op_wck_error_no_valid_images">未获取到有效图片</string>
+    <string name="sud_op_wck_error_get_image_failed">获取图片失败</string>
+    <string name="sud_op_wck_error_image_nil">图片为空</string>
+    <string name="sud_op_wck_error_generate_image_data_failed">生成图片数据失败</string>
+    <string name="sud_op_wck_error_temp_directory_missing">找不到临时目录</string>
+    <string name="sud_op_wck_error_file_path_empty">文件路径为空</string>
+    <string name="sud_op_wck_error_unknown">未知错误</string>
+    <string name="sud_op_wck_error_unsupported_file_type">不支持的文件类型：%1$s</string>
+    <string name="sud_op_wck_error_file_path_not_found">文件路径不存在</string>
+    <string name="sud_op_wck_error_save_photo_failed">保存图片到相册失败</string>
+    <string name="sud_op_wck_error_compress_image_failed">图片处理失败</string>
+    <string name="sud_op_wck_error_brightness_out_of_range">屏幕亮度值超出范围</string>
+</resources>

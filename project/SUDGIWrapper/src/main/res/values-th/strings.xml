@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_op_wck_image_picker_camera">ถ่ายรูป</string>
+    <string name="sud_op_wck_image_picker_album">เลือกจากรูปภาพ</string>
+    <string name="sud_op_wck_common_cancel">ยกเลิก</string>
+    <string name="sud_op_wck_common_confirm">ยืนยัน</string>
+    <string name="sud_op_wck_loading_default">กำลังโหลด…</string>
+    <string name="sud_op_wck_toast_success_default">สำเร็จ</string>
+    <string name="sud_op_wck_error_no_top_view_controller">ไม่พบตัวควบคุมมุมมองที่พร้อมใช้งาน</string>
+    <string name="sud_op_wck_error_invalid_source_types">แหล่งที่มาของรูปภาพว่างเปล่าหรือไม่ถูกต้อง</string>
+    <string name="sud_op_wck_error_cannot_present_controller">ไม่สามารถเปิดตัวเลือกรูปภาพได้</string>
+    <string name="sud_op_wck_error_user_cancelled">ผู้ใช้ยกเลิกการดำเนินการ</string>
+    <string name="sud_op_wck_error_camera_permission_denied">ไม่ได้รับอนุญาตให้เข้าถึงกล้อง</string>
+    <string name="sud_op_wck_error_camera_unavailable">กล้องไม่พร้อมใช้งานบนอุปกรณ์นี้</string>
+    <string name="sud_op_wck_error_photo_permission_denied">ไม่ได้รับอนุญาตให้เข้าถึงรูปภาพ</string>
+    <string name="sud_op_wck_error_photo_unavailable">รูปภาพไม่พร้อมใช้งานบนอุปกรณ์นี้</string>
+    <string name="sud_op_wck_error_load_image_failed">โหลดรูปภาพไม่สำเร็จ</string>
+    <string name="sud_op_wck_error_no_valid_images">ไม่พบรูปภาพที่ถูกต้อง</string>
+    <string name="sud_op_wck_error_get_image_failed">ไม่สามารถดึงรูปภาพได้</string>
+    <string name="sud_op_wck_error_image_nil">รูปภาพว่างเปล่า</string>
+    <string name="sud_op_wck_error_generate_image_data_failed">สร้างข้อมูลรูปภาพไม่สำเร็จ</string>
+    <string name="sud_op_wck_error_temp_directory_missing">ไม่พบไดเรกทอรีชั่วคราว</string>
+    <string name="sud_op_wck_error_file_path_empty">เส้นทางไฟล์ว่างเปล่า</string>
+    <string name="sud_op_wck_error_unknown">ข้อผิดพลาดที่ไม่ทราบสาเหตุ</string>
+    <string name="sud_op_wck_error_unsupported_file_type">ไม่รองรับประเภทไฟล์: %1$s</string>
+    <string name="sud_op_wck_error_file_path_not_found">ไม่มีเส้นทางไฟล์นี้</string>
+    <string name="sud_op_wck_error_save_photo_failed">บันทึกรูปภาพลงในแกลเลอรีไม่สำเร็จ</string>
+    <string name="sud_op_wck_error_compress_image_failed">ประมวลผลรูปภาพไม่สำเร็จ</string>
+    <string name="sud_op_wck_error_brightness_out_of_range">ค่าความสว่างของหน้าจออยู่นอกช่วง</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_op_wck_image_picker_camera">Ambil Foto</string>
+    <string name="sud_op_wck_image_picker_album">Pilih dari Foto</string>
+    <string name="sud_op_wck_common_cancel">Batal</string>
+    <string name="sud_op_wck_common_confirm">Konfirmasi</string>
+    <string name="sud_op_wck_loading_default">Memuat…</string>
+    <string name="sud_op_wck_toast_success_default">Berhasil</string>
+    <string name="sud_op_wck_error_no_top_view_controller">Tidak dapat menemukan pengontrol tampilan yang tersedia.</string>
+    <string name="sud_op_wck_error_invalid_source_types">Sumber gambar kosong atau tidak valid.</string>
+    <string name="sud_op_wck_error_cannot_present_controller">Tidak dapat membuka pemilih gambar.</string>
+    <string name="sud_op_wck_error_user_cancelled">Pengguna membatalkan operasi.</string>
+    <string name="sud_op_wck_error_camera_permission_denied">Akses kamera ditolak.</string>
+    <string name="sud_op_wck_error_camera_unavailable">Kamera tidak tersedia di perangkat ini.</string>
+    <string name="sud_op_wck_error_photo_permission_denied">Akses foto ditolak.</string>
+    <string name="sud_op_wck_error_photo_unavailable">Foto tidak tersedia di perangkat ini.</string>
+    <string name="sud_op_wck_error_load_image_failed">Gagal memuat gambar.</string>
+    <string name="sud_op_wck_error_no_valid_images">Tidak ditemukan gambar yang valid.</string>
+    <string name="sud_op_wck_error_get_image_failed">Gagal mengambil gambar.</string>
+    <string name="sud_op_wck_error_image_nil">Gambar kosong.</string>
+    <string name="sud_op_wck_error_generate_image_data_failed">Gagal membuat data gambar.</string>
+    <string name="sud_op_wck_error_temp_directory_missing">Direktori sementara tidak ditemukan.</string>
+    <string name="sud_op_wck_error_file_path_empty">Jalur file kosong.</string>
+    <string name="sud_op_wck_error_unknown">Kesalahan tidak diketahui.</string>
+    <string name="sud_op_wck_error_unsupported_file_type">Jenis file tidak didukung: %1$s</string>
+    <string name="sud_op_wck_error_file_path_not_found">Jalur file tidak ada.</string>
+    <string name="sud_op_wck_error_save_photo_failed">Gagal menyimpan gambar ke Foto.</string>
+    <string name="sud_op_wck_error_compress_image_failed">Gagal memproses gambar.</string>
+    <string name="sud_op_wck_error_brightness_out_of_range">Nilai kecerahan layar berada di luar rentang.</string>
+</resources>

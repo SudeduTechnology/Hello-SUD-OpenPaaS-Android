@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.library'
+}
+
+def sudSdkVersion = '2.1.0'
+
+android {
+    compileSdkVersion 36
+
+    defaultConfig {
+        minSdkVersion 26
+        targetSdkVersion 36
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'global.sud.gi.SudGIPWrapper'
+    testOptions {
+        unitTests.includeAndroidResources = true
+    }
+}
+
+dependencies {
+
+    // Dependencies required by the SDK
+    // 如果需要上架Google Play，需要修改引入的SDK类型，参考文档：https://github.com/SUD-GLOBAL/sud-gi-android
+    // // If you need to publish on Google Play, you must modify the type of SDK imported. Refer to the documentation：https://github.com/SUD-GLOBAL/sud-gi-android
+    api "global.sud.gi:SUDGI-static:${sudSdkVersion}"
+    implementation "global.sud.gi:SUDGI-shine:${sudSdkVersion}"
+    // 按实际业务选择至少一个广告源
+    implementation "global.sud.gi:SUDM-adapter-admob:${sudSdkVersion}"
+    implementation "global.sud.gi:SUDM-adapter-carty:${sudSdkVersion}"
+    // 使用 Yandex 时添加，并保留上方 AdMob Adapter
+    implementation 'com.yandex.ads.adapter:admob-mobileads:8.3.0.0'
+
+    api 'com.squareup.okhttp3:okhttp:3.11.0'
+
+    // Dependencies required for the demo
+    api "androidx.appcompat:appcompat:1.4.2"
+    api 'androidx.exifinterface:exifinterface:1.4.2'
+    api "androidx.constraintlayout:constraintlayout:2.1.4"
+    api 'androidx.recyclerview:recyclerview:1.2.1'
+    api 'com.google.code.gson:gson:2.8.6'
+    api 'com.blankj:utilcodex:1.31.0' // https://github.com/Blankj/AndroidUtilCode
+    api 'com.github.bumptech.glide:glide:4.12.0'
+    api "com.google.android.material:material:1.5.0"
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.16'
+}

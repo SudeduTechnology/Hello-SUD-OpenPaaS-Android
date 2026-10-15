@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_gi_language_entry">Language settings: %1$s</string>
+    <string name="sud_gi_language_title">Language settings</string>
+    <string name="sud_gi_language_system">Follow system</string>
+    <string name="sud_gi_language_notice">Tap a language to apply it immediately. Your choice is saved for the next launch. This changes app resources to test Wrapper defaults; text provided by games is not automatically translated.</string>
+    <string name="app_name">SUDOP</string>
+    <string name="net_error_hint">Network error. Check your connection.</string>
+    <string name="common_camera">Camera</string>
+    <string name="common_storage">Storage</string>
+    <string name="common_correlation">related</string>
+    <string name="common_record_audio">Microphone</string>
+    <string name="common_phone">Phone</string>
+    <string name="common_setting_permission_info">Enable %1$s permission in Settings to use %2$s features normally.</string>
+    <string name="main_top_title">SUDGI</string>
+    <string name="main_top_url">www.sud.tech</string>
+    <string name="select_game">Select a game</string>
+    <string name="audio_chat_hint">Say something…</string>
+    <string name="audio_gameing">In game</string>
+    <string name="close_game">Close game</string>
+    <string name="room_name">Let’s play together</string>
+    <string name="enter">Enter</string>
+    <string name="room_number">Room number</string>
+    <string name="exit_room">Leave room</string>
+
+    <string name="main_gi_game">GI Game</string>
+    <string name="main_op">OpenPaas Game</string>
+    <string name="op_initializing_sdk">Initializing game service…</string>
+    <string name="op_preparing_account">Preparing game account…</string>
+    <string name="op_loading_games">Loading games…</string>
+    <string name="op_empty_games">No games are available</string>
+    <string name="op_retry">Retry</string>
+    <string name="op_sdk_init_failed">Game service initialization failed (%1$d)</string>
+    <string name="op_login_failed">Game account login failed (%1$d)</string>
+    <string name="op_game_list_failed">Game list loading failed (%1$d)</string>
+    <string name="op_game_icon">Game icon</string>
+    <string name="op_game_title">OpenPaas Game</string>
+    <string name="op_game_loading">Entering game…</string>
+    <string name="op_game_loading_progress">Loading game %1$d%%</string>
+    <string name="op_game_start_failed">Unable to enter game (%1$d)</string>
+    <string name="common_back">Back</string>
+
+
+    <string name="toast_sudm_init_failed">SUDM initialization failed: %1$d (%2$s)</string>
+    <string name="toast_crash_quit">The app crashed and will close.</string>
+
+    <string name="ad_hot_games">Popular game picks</string>
+    <string name="ad_banner_description">Great rewards and easy gameplay. Try it now.</string>
+    <string name="ad_download_now">Download now</string>
+    <string name="ad_image_placeholder">Image</string>
+    <string name="ad_recommended_mini_games">Featured mini games</string>
+    <string name="ad_mini_games">Mini game picks</string>
+    <string name="ad_more_fun">More\nFun</string>
+    <string name="ad_label">Ad</string>
+    <string name="ad_interstitial_title">Hongguo Free Short Dramas</string>
+    <string name="ad_interstitial_description">Enjoy a huge collection of short dramas on Hongguo.</string>
+    <string name="ad_watch_short_dramas_free">Watch free short dramas</string>
+    <string name="ad_interstitial_footer">Privacy | Permissions | About | V7.1.5… | Beijing Bimoliuxiang Technology Co., Ltd.</string>
+    <string name="ad_back">‹ Back</string>
+    <string name="ad_native_app_name">App name</string>
+    <string name="ad_native_app_description">App description</string>
+    <string name="ad_install">Install</string>
+    <string name="ad_native_footer">3.1.5 | XXXX Co., Ltd. | Privacy | Permissions</string>
+    <string name="ad_reward_countdown">Watch for %1$d s to earn the reward</string>
+    <string name="ad_reward_earned">Reward requirement met</string>
+    <string name="ad_reward_exit_message">Watch for %1$d more seconds to earn the reward. Leave now?</string>
+    <string name="ad_close_video">Close video</string>
+    <string name="ad_continue_watching">Keep watching</string>
+    <string name="ad_sound_on">Sound</string>
+    <string name="ad_sound_off">Muted</string>
+
+    <string-array name="ad_portal_game_names">
+        <item>Bunny Blast</item>
+        <item>Mini Blocks…</item>
+        <item>Idol Stylist</item>
+        <item>Super Class Rep</item>
+        <item>Sushi Rush</item>
+        <item>Wood Carving 6</item>
+        <item>Warriors Feast</item>
+        <item>Foot Care Master</item>
+        <item>Chain Blast…</item>
+    </string-array>
+    <string-array name="ad_portal_icon_texts">
+        <item>B</item>
+        <item>M</item>
+        <item>I</item>
+        <item>S</item>
+        <item>S</item>
+        <item>W</item>
+        <item>F</item>
+        <item>F</item>
+        <item>G</item>
+    </string-array>
+    <string-array name="ad_drawer_game_names">
+        <item>Cosmic Dream Ball</item>
+        <item>Cyclone Beetle</item>
+        <item>Warzone Heroes</item>
+        <item>Travel World</item>
+        <item>Super Cow</item>
+        <item>Don’t Step on the Blocks</item>
+    </string-array>
+    <string-array name="ad_drawer_icon_texts">
+        <item>C</item>
+        <item>B</item>
+        <item>W</item>
+        <item>T</item>
+        <item>C</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="ad_banner_game_names">
+        <item>Foot Care Master</item>
+        <item>Wood Carving 6</item>
+        <item>Bunny Blast</item>
+        <item>Piano Tiles 2</item>
+        <item>Super Class Rep</item>
+    </string-array>
+    <string-array name="ad_banner_icon_texts">
+        <item>F</item>
+        <item>W</item>
+        <item>B</item>
+        <item>2</item>
+        <item>S</item>
+    </string-array>
+
+    <string name="sud_gi_language_custom">Custom</string>
+    <string name="sud_gi_language_custom_hint">Language tag, e.g. vi-VN</string>
+    <string name="sud_gi_language_custom_empty">Enter a language tag</string>
+    <string name="sud_gi_language_custom_invalid">Invalid language tag, e.g. vi-VN</string>
+</resources>

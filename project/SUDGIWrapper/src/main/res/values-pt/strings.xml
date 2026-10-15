@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_op_wck_image_picker_camera">Tirar foto</string>
+    <string name="sud_op_wck_image_picker_album">Escolher das fotos</string>
+    <string name="sud_op_wck_common_cancel">Cancelar</string>
+    <string name="sud_op_wck_common_confirm">Confirmar</string>
+    <string name="sud_op_wck_loading_default">Carregando…</string>
+    <string name="sud_op_wck_toast_success_default">Sucesso</string>
+    <string name="sud_op_wck_error_no_top_view_controller">Não foi possível encontrar um controlador de visualização disponível.</string>
+    <string name="sud_op_wck_error_invalid_source_types">As fontes de imagem estão vazias ou são inválidas.</string>
+    <string name="sud_op_wck_error_cannot_present_controller">Não foi possível abrir o seletor de imagens.</string>
+    <string name="sud_op_wck_error_user_cancelled">O usuário cancelou a operação.</string>
+    <string name="sud_op_wck_error_camera_permission_denied">O acesso à câmera foi negado.</string>
+    <string name="sud_op_wck_error_camera_unavailable">A câmera não está disponível neste dispositivo.</string>
+    <string name="sud_op_wck_error_photo_permission_denied">O acesso às fotos foi negado.</string>
+    <string name="sud_op_wck_error_photo_unavailable">As fotos não estão disponíveis neste dispositivo.</string>
+    <string name="sud_op_wck_error_load_image_failed">Não foi possível carregar a imagem.</string>
+    <string name="sud_op_wck_error_no_valid_images">Nenhuma imagem válida foi encontrada.</string>
+    <string name="sud_op_wck_error_get_image_failed">Não foi possível obter a imagem.</string>
+    <string name="sud_op_wck_error_image_nil">A imagem está vazia.</string>
+    <string name="sud_op_wck_error_generate_image_data_failed">Não foi possível gerar os dados da imagem.</string>
+    <string name="sud_op_wck_error_temp_directory_missing">O diretório temporário não foi encontrado.</string>
+    <string name="sud_op_wck_error_file_path_empty">O caminho do arquivo está vazio.</string>
+    <string name="sud_op_wck_error_unknown">Erro desconhecido.</string>
+    <string name="sud_op_wck_error_unsupported_file_type">Tipo de arquivo não suportado: %1$s</string>
+    <string name="sud_op_wck_error_file_path_not_found">O caminho do arquivo não existe.</string>
+    <string name="sud_op_wck_error_save_photo_failed">Não foi possível salvar a imagem em Fotos.</string>
+    <string name="sud_op_wck_error_compress_image_failed">Não foi possível processar a imagem.</string>
+    <string name="sud_op_wck_error_brightness_out_of_range">O valor do brilho da tela está fora do intervalo.</string>
+</resources>

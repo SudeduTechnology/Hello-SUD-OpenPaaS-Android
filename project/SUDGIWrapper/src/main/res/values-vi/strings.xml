@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_op_wck_image_picker_camera">Chụp ảnh</string>
+    <string name="sud_op_wck_image_picker_album">Chọn từ thư viện ảnh</string>
+    <string name="sud_op_wck_common_cancel">Hủy</string>
+    <string name="sud_op_wck_common_confirm">Xác nhận</string>
+    <string name="sud_op_wck_loading_default">Đang tải…</string>
+    <string name="sud_op_wck_toast_success_default">Thành công</string>
+    <string name="sud_op_wck_error_no_top_view_controller">Không tìm thấy bộ điều khiển chế độ xem khả dụng.</string>
+    <string name="sud_op_wck_error_invalid_source_types">Nguồn ảnh trống hoặc không hợp lệ.</string>
+    <string name="sud_op_wck_error_cannot_present_controller">Không thể mở trình chọn ảnh.</string>
+    <string name="sud_op_wck_error_user_cancelled">Người dùng đã hủy thao tác.</string>
+    <string name="sud_op_wck_error_camera_permission_denied">Quyền truy cập camera bị từ chối.</string>
+    <string name="sud_op_wck_error_camera_unavailable">Camera không khả dụng trên thiết bị này.</string>
+    <string name="sud_op_wck_error_photo_permission_denied">Quyền truy cập ảnh bị từ chối.</string>
+    <string name="sud_op_wck_error_photo_unavailable">Ảnh không khả dụng trên thiết bị này.</string>
+    <string name="sud_op_wck_error_load_image_failed">Không thể tải ảnh.</string>
+    <string name="sud_op_wck_error_no_valid_images">Không tìm thấy ảnh hợp lệ.</string>
+    <string name="sud_op_wck_error_get_image_failed">Không thể lấy ảnh.</string>
+    <string name="sud_op_wck_error_image_nil">Ảnh trống.</string>
+    <string name="sud_op_wck_error_generate_image_data_failed">Không thể tạo dữ liệu ảnh.</string>
+    <string name="sud_op_wck_error_temp_directory_missing">Không tìm thấy thư mục tạm thời.</string>
+    <string name="sud_op_wck_error_file_path_empty">Đường dẫn tệp trống.</string>
+    <string name="sud_op_wck_error_unknown">Lỗi không xác định.</string>
+    <string name="sud_op_wck_error_unsupported_file_type">Loại tệp không được hỗ trợ: %1$s</string>
+    <string name="sud_op_wck_error_file_path_not_found">Đường dẫn tệp không tồn tại.</string>
+    <string name="sud_op_wck_error_save_photo_failed">Không thể lưu ảnh vào thư viện.</string>
+    <string name="sud_op_wck_error_compress_image_failed">Không thể xử lý ảnh.</string>
+    <string name="sud_op_wck_error_brightness_out_of_range">Giá trị độ sáng màn hình nằm ngoài phạm vi.</string>
+</resources>

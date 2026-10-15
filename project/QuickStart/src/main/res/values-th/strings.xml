@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_gi_language_entry">ตั้งค่าภาษา: %1$s</string>
+    <string name="sud_gi_language_title">ตั้งค่าภาษา</string>
+    <string name="sud_gi_language_system">ตามระบบ</string>
+    <string name="sud_gi_language_notice">แตะภาษาเพื่อใช้ทันที ระบบจะบันทึกไว้สำหรับการเปิดแอปครั้งถัดไป เปลี่ยนภาษาแอปเพื่อทดสอบข้อความเริ่มต้นของ Wrapper ข้อความที่เกมกำหนดเองจะไม่ถูกแปลโดยอัตโนมัติ</string>
+    <string name="app_name">SUDOP</string>
+    <string name="net_error_hint">เกิดข้อผิดพลาดของเครือข่าย โปรดตรวจสอบการเชื่อมต่อ</string>
+    <string name="common_camera">กล้อง</string>
+    <string name="common_storage">พื้นที่เก็บข้อมูล</string>
+    <string name="common_correlation">ที่เกี่ยวข้อง</string>
+    <string name="common_record_audio">ไมโครโฟน</string>
+    <string name="common_phone">โทรศัพท์</string>
+    <string name="common_setting_permission_info">เปิดสิทธิ์ %1$s ในการตั้งค่าเพื่อใช้ฟีเจอร์ของ %2$s ได้ตามปกติ</string>
+    <string name="main_top_title">SUDGI</string>
+    <string name="main_top_url">www.sud.tech</string>
+    <string name="select_game">เลือกเกม</string>
+    <string name="audio_chat_hint">พูดอะไรสักหน่อย…</string>
+    <string name="audio_gameing">กำลังเล่นเกม</string>
+    <string name="close_game">ปิดเกม</string>
+    <string name="room_name">มาเล่นด้วยกัน</string>
+    <string name="enter">เข้า</string>
+    <string name="room_number">หมายเลขห้อง</string>
+    <string name="exit_room">ออกจากห้อง</string>
+    <string name="main_gi_game">เกม GI</string>
+    <string name="main_op">เกม OpenPaas</string>
+    <string name="op_initializing_sdk">กำลังเริ่มต้นบริการเกม…</string>
+    <string name="op_preparing_account">กำลังเตรียมบัญชีเกม…</string>
+    <string name="op_loading_games">กำลังโหลดรายการเกม…</string>
+    <string name="op_empty_games">ไม่มีเกมที่พร้อมใช้งาน</string>
+    <string name="op_retry">ลองอีกครั้ง</string>
+    <string name="op_sdk_init_failed">เริ่มต้นบริการเกมไม่สำเร็จ (%1$d)</string>
+    <string name="op_login_failed">เข้าสู่ระบบบัญชีเกมไม่สำเร็จ (%1$d)</string>
+    <string name="op_game_list_failed">โหลดรายการเกมไม่สำเร็จ (%1$d)</string>
+    <string name="op_game_icon">ไอคอนเกม</string>
+    <string name="op_game_title">เกม OpenPaas</string>
+    <string name="op_game_loading">กำลังเข้าเกม…</string>
+    <string name="op_game_loading_progress">กำลังโหลดเกม %1$d%%</string>
+    <string name="op_game_start_failed">ไม่สามารถเข้าเกมได้ (%1$d)</string>
+    <string name="common_back">กลับ</string>
+    <string name="toast_sudm_init_failed">เริ่มต้น SUDM ไม่สำเร็จ: %1$d (%2$s)</string>
+    <string name="toast_crash_quit">แอปขัดข้องและจะปิด</string>
+    <string name="ad_hot_games">เกมยอดนิยมแนะนำ</string>
+    <string name="ad_banner_description">รางวัลดี เล่นง่าย ลองเลยตอนนี้</string>
+    <string name="ad_download_now">ดาวน์โหลดเลย</string>
+    <string name="ad_image_placeholder">รูปภาพ</string>
+    <string name="ad_recommended_mini_games">มินิเกมคัดสรร</string>
+    <string name="ad_mini_games">มินิเกมแนะนำ</string>
+    <string name="ad_more_fun">สนุก\nกว่า</string>
+    <string name="ad_label">โฆษณา</string>
+    <string name="ad_interstitial_title">ละครสั้นฟรี Hongguo</string>
+    <string name="ad_interstitial_description">เพลิดเพลินกับละครสั้นมากมายบน Hongguo</string>
+    <string name="ad_watch_short_dramas_free">ดูละครสั้นฟรี</string>
+    <string name="ad_interstitial_footer">ความเป็นส่วนตัว | สิทธิ์ | เกี่ยวกับ | V7.1.5… | Beijing Bimoliuxiang Technology Co., Ltd.</string>
+    <string name="ad_back">‹ กลับ</string>
+    <string name="ad_native_app_name">ชื่อแอป</string>
+    <string name="ad_native_app_description">คำอธิบายแอป</string>
+    <string name="ad_install">ติดตั้ง</string>
+    <string name="ad_native_footer">3.1.5 | XXXX Co., Ltd. | ความเป็นส่วนตัว | สิทธิ์</string>
+    <string name="ad_reward_countdown">ดู %1$d วินาทีเพื่อรับรางวัล</string>
+    <string name="ad_reward_earned">ครบเงื่อนไขรับรางวัลแล้ว</string>
+    <string name="ad_reward_exit_message">ดูต่ออีก %1$d วินาทีเพื่อรับรางวัล ออกตอนนี้หรือไม่?</string>
+    <string name="ad_close_video">ปิดวิดีโอ</string>
+    <string name="ad_continue_watching">ดูต่อ</string>
+    <string name="ad_sound_on">เสียง</string>
+    <string name="ad_sound_off">ปิดเสียง</string>
+    <string-array name="ad_portal_game_names">
+        <item>ระเบิดกระต่าย</item>
+        <item>บล็อกจิ๋ว…</item>
+        <item>สไตลิสต์ไอดอล</item>
+        <item>หัวหน้าห้องยอดเยี่ยม</item>
+        <item>ซูชิรัช</item>
+        <item>แกะสลักไม้ 6</item>
+        <item>งานเลี้ยงนักรบ</item>
+        <item>ผู้เชี่ยวชาญดูแลเท้า</item>
+        <item>ระเบิดทั่วชาติ…</item>
+    </string-array>
+    <string-array name="ad_portal_icon_texts">
+        <item>ก</item>
+        <item>บ</item>
+        <item>อ</item>
+        <item>ห</item>
+        <item>ซ</item>
+        <item>ม</item>
+        <item>น</item>
+        <item>ท</item>
+        <item>ร</item>
+    </string-array>
+    <string-array name="ad_drawer_game_names">
+        <item>ลูกบอลฝันจักรวาล</item>
+        <item>ด้วงไซโคลน</item>
+        <item>วีรบุรุษเขตสงคราม</item>
+        <item>โลกแห่งการเดินทาง</item>
+        <item>วัวซูเปอร์</item>
+        <item>อย่าเหยียบบล็อก</item>
+    </string-array>
+    <string-array name="ad_drawer_icon_texts">
+        <item>จ</item>
+        <item>ด</item>
+        <item>ว</item>
+        <item>ล</item>
+        <item>ว</item>
+        <item>บ</item>
+    </string-array>
+    <string-array name="ad_banner_game_names">
+        <item>ผู้เชี่ยวชาญดูแลเท้า</item>
+        <item>แกะสลักไม้ 6</item>
+        <item>ระเบิดกระต่าย</item>
+        <item>เปียโนไทล์ 2</item>
+        <item>หัวหน้าห้องยอดเยี่ยม</item>
+    </string-array>
+    <string-array name="ad_banner_icon_texts">
+        <item>ท</item>
+        <item>ม</item>
+        <item>ก</item>
+        <item>2</item>
+        <item>ห</item>
+    </string-array>
+    <string name="sud_gi_language_custom">กำหนดเอง</string>
+    <string name="sud_gi_language_custom_hint">รหัสภาษา เช่น vi-VN</string>
+    <string name="sud_gi_language_custom_empty">กรุณาป้อนรหัสภาษา</string>
+    <string name="sud_gi_language_custom_invalid">รหัสภาษาไม่ถูกต้อง เช่น vi-VN</string>
+</resources>

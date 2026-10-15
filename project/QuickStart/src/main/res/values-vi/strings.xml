@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_gi_language_entry">Cài đặt ngôn ngữ: %1$s</string>
+    <string name="sud_gi_language_title">Cài đặt ngôn ngữ</string>
+    <string name="sud_gi_language_system">Theo hệ thống</string>
+    <string name="sud_gi_language_notice">Chạm vào ngôn ngữ để áp dụng ngay. Lựa chọn được lưu cho lần mở tiếp theo. Đổi ngôn ngữ ứng dụng để kiểm tra văn bản mặc định của Wrapper; văn bản do trò chơi cung cấp không được dịch tự động.</string>
+    <string name="app_name">SUDOP</string>
+    <string name="net_error_hint">Lỗi mạng. Hãy kiểm tra kết nối.</string>
+    <string name="common_camera">Camera</string>
+    <string name="common_storage">Bộ nhớ</string>
+    <string name="common_correlation">liên quan</string>
+    <string name="common_record_audio">Micrô</string>
+    <string name="common_phone">Điện thoại</string>
+    <string name="common_setting_permission_info">Bật quyền %1$s trong Cài đặt để sử dụng các tính năng của %2$s bình thường.</string>
+    <string name="main_top_title">SUDGI</string>
+    <string name="main_top_url">www.sud.tech</string>
+    <string name="select_game">Chọn trò chơi</string>
+    <string name="audio_chat_hint">Hãy nói gì đó…</string>
+    <string name="audio_gameing">Đang chơi</string>
+    <string name="close_game">Đóng trò chơi</string>
+    <string name="room_name">Cùng chơi nhé</string>
+    <string name="enter">Vào</string>
+    <string name="room_number">Số phòng</string>
+    <string name="exit_room">Rời phòng</string>
+    <string name="main_gi_game">Trò chơi GI</string>
+    <string name="main_op">Trò chơi OpenPaas</string>
+    <string name="op_initializing_sdk">Đang khởi tạo dịch vụ trò chơi…</string>
+    <string name="op_preparing_account">Đang chuẩn bị tài khoản trò chơi…</string>
+    <string name="op_loading_games">Đang tải danh sách trò chơi…</string>
+    <string name="op_empty_games">Không có trò chơi khả dụng</string>
+    <string name="op_retry">Thử lại</string>
+    <string name="op_sdk_init_failed">Không thể khởi tạo dịch vụ trò chơi (%1$d)</string>
+    <string name="op_login_failed">Đăng nhập tài khoản trò chơi thất bại (%1$d)</string>
+    <string name="op_game_list_failed">Tải danh sách trò chơi thất bại (%1$d)</string>
+    <string name="op_game_icon">Biểu tượng trò chơi</string>
+    <string name="op_game_title">Trò chơi OpenPaas</string>
+    <string name="op_game_loading">Đang vào trò chơi…</string>
+    <string name="op_game_loading_progress">Đang tải trò chơi %1$d%%</string>
+    <string name="op_game_start_failed">Không thể vào trò chơi (%1$d)</string>
+    <string name="common_back">Quay lại</string>
+    <string name="toast_sudm_init_failed">Khởi tạo SUDM thất bại: %1$d (%2$s)</string>
+    <string name="toast_crash_quit">Ứng dụng gặp sự cố và sẽ đóng.</string>
+    <string name="ad_hot_games">Đề xuất trò chơi phổ biến</string>
+    <string name="ad_banner_description">Phần thưởng hấp dẫn, dễ chơi. Thử ngay.</string>
+    <string name="ad_download_now">Tải xuống ngay</string>
+    <string name="ad_image_placeholder">Hình ảnh</string>
+    <string name="ad_recommended_mini_games">Mini game nổi bật</string>
+    <string name="ad_mini_games">Mini game đề xuất</string>
+    <string name="ad_more_fun">Thêm\nVui</string>
+    <string name="ad_label">Quảng cáo</string>
+    <string name="ad_interstitial_title">Phim Ngắn Miễn Phí Hongguo</string>
+    <string name="ad_interstitial_description">Thưởng thức kho phim ngắn phong phú trên Hongguo.</string>
+    <string name="ad_watch_short_dramas_free">Xem phim ngắn miễn phí</string>
+    <string name="ad_interstitial_footer">Quyền riêng tư | Quyền | Giới thiệu | V7.1.5… | Beijing Bimoliuxiang Technology Co., Ltd.</string>
+    <string name="ad_back">‹ Quay lại</string>
+    <string name="ad_native_app_name">Tên ứng dụng</string>
+    <string name="ad_native_app_description">Mô tả ứng dụng</string>
+    <string name="ad_install">Cài đặt</string>
+    <string name="ad_native_footer">3.1.5 | XXXX Co., Ltd. | Quyền riêng tư | Quyền</string>
+    <string name="ad_reward_countdown">Xem %1$d giây để nhận thưởng</string>
+    <string name="ad_reward_earned">Đã đáp ứng điều kiện nhận thưởng</string>
+    <string name="ad_reward_exit_message">Xem thêm %1$d giây để nhận thưởng. Rời đi ngay?</string>
+    <string name="ad_close_video">Đóng video</string>
+    <string name="ad_continue_watching">Tiếp tục xem</string>
+    <string name="ad_sound_on">Âm thanh</string>
+    <string name="ad_sound_off">Tắt tiếng</string>
+    <string-array name="ad_portal_game_names">
+        <item>Thỏ Bùng Nổ</item>
+        <item>Khối Mini…</item>
+        <item>Nhà Tạo Mẫu Thần Tượng</item>
+        <item>Lớp Trưởng Siêu Cấp</item>
+        <item>Sushi Thần Tốc</item>
+        <item>Khắc Gỗ 6</item>
+        <item>Yến Tiệc Chiến Binh</item>
+        <item>Bậc Thầy Chăm Sóc Chân</item>
+        <item>Bùng Nổ Toàn Dân…</item>
+    </string-array>
+    <string-array name="ad_portal_icon_texts">
+        <item>T</item>
+        <item>K</item>
+        <item>M</item>
+        <item>L</item>
+        <item>S</item>
+        <item>G</item>
+        <item>C</item>
+        <item>F</item>
+        <item>N</item>
+    </string-array>
+    <string-array name="ad_drawer_game_names">
+        <item>Bóng Mơ Vũ Trụ</item>
+        <item>Bọ Cánh Cứng Lốc Xoáy</item>
+        <item>Anh Hùng Chiến Khu</item>
+        <item>Thế Giới Du Lịch</item>
+        <item>Siêu Bò</item>
+        <item>Đừng Dẫm Lên Khối</item>
+    </string-array>
+    <string-array name="ad_drawer_icon_texts">
+        <item>V</item>
+        <item>B</item>
+        <item>A</item>
+        <item>D</item>
+        <item>B</item>
+        <item>K</item>
+    </string-array>
+    <string-array name="ad_banner_game_names">
+        <item>Bậc Thầy Chăm Sóc Chân</item>
+        <item>Khắc Gỗ 6</item>
+        <item>Thỏ Bùng Nổ</item>
+        <item>Ô Nhạc Piano 2</item>
+        <item>Lớp Trưởng Siêu Cấp</item>
+    </string-array>
+    <string-array name="ad_banner_icon_texts">
+        <item>F</item>
+        <item>G</item>
+        <item>T</item>
+        <item>2</item>
+        <item>L</item>
+    </string-array>
+    <string name="sud_gi_language_custom">Tùy chỉnh</string>
+    <string name="sud_gi_language_custom_hint">Mã ngôn ngữ, ví dụ: vi-VN</string>
+    <string name="sud_gi_language_custom_empty">Nhập mã ngôn ngữ</string>
+    <string name="sud_gi_language_custom_invalid">Mã ngôn ngữ không hợp lệ, ví dụ: vi-VN</string>
+</resources>

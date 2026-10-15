@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_gi_language_entry">Pengaturan bahasa: %1$s</string>
+    <string name="sud_gi_language_title">Pengaturan bahasa</string>
+    <string name="sud_gi_language_system">Ikuti sistem</string>
+    <string name="sud_gi_language_notice">Ketuk bahasa untuk langsung menerapkannya. Pilihan disimpan untuk peluncuran berikutnya. Bahasa aplikasi berubah untuk menguji teks bawaan Wrapper; teks dari game tidak diterjemahkan otomatis.</string>
+    <string name="app_name">SUDOP</string>
+    <string name="net_error_hint">Kesalahan jaringan. Periksa koneksi Anda.</string>
+    <string name="common_camera">Kamera</string>
+    <string name="common_storage">Penyimpanan</string>
+    <string name="common_correlation">terkait</string>
+    <string name="common_record_audio">Mikrofon</string>
+    <string name="common_phone">Telepon</string>
+    <string name="common_setting_permission_info">Aktifkan izin %1$s di Pengaturan agar fitur %2$s dapat digunakan secara normal.</string>
+    <string name="main_top_title">SUDGI</string>
+    <string name="main_top_url">www.sud.tech</string>
+    <string name="select_game">Pilih game</string>
+    <string name="audio_chat_hint">Katakan sesuatu…</string>
+    <string name="audio_gameing">Sedang bermain</string>
+    <string name="close_game">Tutup game</string>
+    <string name="room_name">Ayo bermain bersama</string>
+    <string name="enter">Masuk</string>
+    <string name="room_number">Nomor ruang</string>
+    <string name="exit_room">Keluar dari ruang</string>
+    <string name="main_gi_game">Game GI</string>
+    <string name="main_op">Game OpenPaas</string>
+    <string name="op_initializing_sdk">Menginisialisasi layanan game…</string>
+    <string name="op_preparing_account">Menyiapkan akun game…</string>
+    <string name="op_loading_games">Memuat daftar game…</string>
+    <string name="op_empty_games">Tidak ada game yang tersedia</string>
+    <string name="op_retry">Coba lagi</string>
+    <string name="op_sdk_init_failed">Gagal menginisialisasi layanan game (%1$d)</string>
+    <string name="op_login_failed">Gagal masuk ke akun game (%1$d)</string>
+    <string name="op_game_list_failed">Gagal memuat daftar game (%1$d)</string>
+    <string name="op_game_icon">Ikon game</string>
+    <string name="op_game_title">Game OpenPaas</string>
+    <string name="op_game_loading">Memasuki game…</string>
+    <string name="op_game_loading_progress">Memuat game %1$d%%</string>
+    <string name="op_game_start_failed">Tidak dapat memasuki game (%1$d)</string>
+    <string name="common_back">Kembali</string>
+    <string name="toast_sudm_init_failed">Inisialisasi SUDM gagal: %1$d (%2$s)</string>
+    <string name="toast_crash_quit">Aplikasi mengalami crash dan akan ditutup.</string>
+    <string name="ad_hot_games">Rekomendasi game populer</string>
+    <string name="ad_banner_description">Hadiah menarik dan mudah dimainkan. Coba sekarang.</string>
+    <string name="ad_download_now">Unduh sekarang</string>
+    <string name="ad_image_placeholder">Gambar</string>
+    <string name="ad_recommended_mini_games">Mini game pilihan</string>
+    <string name="ad_mini_games">Rekomendasi mini game</string>
+    <string name="ad_more_fun">Lebih\nSeru</string>
+    <string name="ad_label">Iklan</string>
+    <string name="ad_interstitial_title">Drama Pendek Gratis Hongguo</string>
+    <string name="ad_interstitial_description">Nikmati banyak drama pendek di Hongguo.</string>
+    <string name="ad_watch_short_dramas_free">Tonton drama pendek gratis</string>
+    <string name="ad_interstitial_footer">Privasi | Izin | Tentang | V7.1.5… | Beijing Bimoliuxiang Technology Co., Ltd.</string>
+    <string name="ad_back">‹ Kembali</string>
+    <string name="ad_native_app_name">Nama aplikasi</string>
+    <string name="ad_native_app_description">Deskripsi aplikasi</string>
+    <string name="ad_install">Instal</string>
+    <string name="ad_native_footer">3.1.5 | XXXX Co., Ltd. | Privasi | Izin</string>
+    <string name="ad_reward_countdown">Tonton selama %1$d dtk untuk mendapat hadiah</string>
+    <string name="ad_reward_earned">Syarat hadiah terpenuhi</string>
+    <string name="ad_reward_exit_message">Tonton %1$d detik lagi untuk mendapat hadiah. Keluar sekarang?</string>
+    <string name="ad_close_video">Tutup video</string>
+    <string name="ad_continue_watching">Lanjut menonton</string>
+    <string name="ad_sound_on">Suara</string>
+    <string name="ad_sound_off">Senyap</string>
+    <string-array name="ad_portal_game_names">
+        <item>Ledakan Kelinci</item>
+        <item>Blok Mini…</item>
+        <item>Penata Idola</item>
+        <item>Ketua Kelas Super</item>
+        <item>Serbuan Sushi</item>
+        <item>Ukir Kayu 6</item>
+        <item>Pesta Prajurit</item>
+        <item>Ahli Perawatan Kaki</item>
+        <item>Ledakan Nasional…</item>
+    </string-array>
+    <string-array name="ad_portal_icon_texts">
+        <item>K</item>
+        <item>B</item>
+        <item>I</item>
+        <item>S</item>
+        <item>S</item>
+        <item>U</item>
+        <item>P</item>
+        <item>K</item>
+        <item>L</item>
+    </string-array>
+    <string-array name="ad_drawer_game_names">
+        <item>Bola Mimpi Kosmik</item>
+        <item>Kumbang Siklon</item>
+        <item>Pahlawan Zona Perang</item>
+        <item>Dunia Perjalanan</item>
+        <item>Sapi Super</item>
+        <item>Jangan Injak Blok</item>
+    </string-array>
+    <string-array name="ad_drawer_icon_texts">
+        <item>K</item>
+        <item>B</item>
+        <item>P</item>
+        <item>D</item>
+        <item>S</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="ad_banner_game_names">
+        <item>Ahli Perawatan Kaki</item>
+        <item>Ukir Kayu 6</item>
+        <item>Ledakan Kelinci</item>
+        <item>Ubin Piano 2</item>
+        <item>Ketua Kelas Super</item>
+    </string-array>
+    <string-array name="ad_banner_icon_texts">
+        <item>K</item>
+        <item>U</item>
+        <item>K</item>
+        <item>2</item>
+        <item>S</item>
+    </string-array>
+    <string name="sud_gi_language_custom">Kustom</string>
+    <string name="sud_gi_language_custom_hint">Tag bahasa, mis. vi-VN</string>
+    <string name="sud_gi_language_custom_empty">Masukkan tag bahasa</string>
+    <string name="sud_gi_language_custom_invalid">Tag bahasa tidak valid, mis. vi-VN</string>
+</resources>

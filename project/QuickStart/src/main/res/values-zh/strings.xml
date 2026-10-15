@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sud_gi_language_entry">语言设置：%1$s</string>
+    <string name="sud_gi_language_title">语言设置</string>
+    <string name="sud_gi_language_system">跟随系统</string>
+    <string name="sud_gi_language_notice">点击语言立即生效，下次启动沿用。通过切换应用资源语言验证 Wrapper 默认文案；小游戏自行提供的文案不会自动翻译。</string>
+    <string name="app_name">SUDOP</string>
+    <string name="net_error_hint">网络错误，请检查网络连接</string>
+    <string name="common_camera">相机</string>
+    <string name="common_storage">存储</string>
+    <string name="common_correlation">相关</string>
+    <string name="common_record_audio">录音</string>
+    <string name="common_phone">电话</string>
+    <string name="common_setting_permission_info">请在设置中开启%1$s权限，以正常使用 %2$s APP功能</string>
+    <string name="main_top_title">SUDGI</string>
+    <string name="main_top_url">www.sud.tech</string>
+    <string name="select_game">选择游戏</string>
+    <string name="audio_chat_hint">聊一聊~</string>
+    <string name="audio_gameing">游戏中</string>
+    <string name="close_game">关闭游戏</string>
+    <string name="room_name">来一起玩游戏吧</string>
+    <string name="enter">进入</string>
+    <string name="room_number">房号</string>
+    <string name="exit_room">退出房间</string>
+    <string name="main_gi_game">GI 游戏</string>
+    <string name="main_op">OpenPaas 游戏</string>
+    <string name="op_initializing_sdk">正在初始化游戏服务…</string>
+    <string name="op_preparing_account">正在准备游戏账号…</string>
+    <string name="op_loading_games">正在加载游戏列表…</string>
+    <string name="op_empty_games">暂无可用游戏</string>
+    <string name="op_retry">重试</string>
+    <string name="op_sdk_init_failed">游戏服务初始化失败（%1$d）</string>
+    <string name="op_login_failed">游戏账号登录失败（%1$d）</string>
+    <string name="op_game_list_failed">游戏列表加载失败（%1$d）</string>
+    <string name="op_game_icon">游戏图标</string>
+    <string name="op_game_title">OpenPaas 游戏</string>
+    <string name="op_game_loading">正在进入游戏…</string>
+    <string name="op_game_loading_progress">游戏加载中 %1$d%%</string>
+    <string name="op_game_start_failed">进入游戏失败（%1$d）</string>
+    <string name="common_back">返回</string>
+    <string name="toast_sudm_init_failed">SUDM 初始化失败：%1$d（%2$s）</string>
+    <string name="toast_crash_quit">应用发生异常，即将退出</string>
+    <string name="ad_hot_games">热门游戏推荐</string>
+    <string name="ad_banner_description">超高返利，轻松上手，立即体验精彩内容</string>
+    <string name="ad_download_now">立即下载</string>
+    <string name="ad_image_placeholder">图片</string>
+    <string name="ad_recommended_mini_games">精品小游戏推荐</string>
+    <string name="ad_mini_games">小游戏推荐</string>
+    <string name="ad_more_fun">更\n多\n好\n玩</string>
+    <string name="ad_label">广告</string>
+    <string name="ad_interstitial_title">红果免费短剧</string>
+    <string name="ad_interstitial_description">畅享海量短剧，尽在红果免费短剧</string>
+    <string name="ad_watch_short_dramas_free">免费看短剧</string>
+    <string name="ad_interstitial_footer">隐私 | 权限 | 介绍 | V7.1.5… | 北京笔墨留香科技有限公司</string>
+    <string name="ad_back">‹ 返回</string>
+    <string name="ad_native_app_name">应用名称</string>
+    <string name="ad_native_app_description">应用介绍</string>
+    <string name="ad_install">安装</string>
+    <string name="ad_native_footer">3.1.5 | XXXX 有限公司 | 隐私 | 权限</string>
+    <string name="ad_reward_countdown">看 %1$d 秒可领取奖励</string>
+    <string name="ad_reward_earned">已满足奖励条件</string>
+    <string name="ad_reward_exit_message">继续观看 %1$d 秒即可领取奖励，确定要离开吗？</string>
+    <string name="ad_close_video">关闭视频</string>
+    <string name="ad_continue_watching">继续观看</string>
+    <string name="ad_sound_on">声</string>
+    <string name="ad_sound_off">静</string>
+    <string-array name="ad_portal_game_names">
+        <item>炸飞小兔兔</item>
+        <item>迷你方块…</item>
+        <item>装扮爱豆</item>
+        <item>超级课代表</item>
+        <item>寿司奥利给</item>
+        <item>削木头贼6</item>
+        <item>吞食天地</item>
+        <item>修脚大师</item>
+        <item>全民爆索…</item>
+    </string-array>
+    <string-array name="ad_portal_icon_texts">
+        <item>兔</item>
+        <item>方</item>
+        <item>妆</item>
+        <item>课</item>
+        <item>寿</item>
+        <item>剑</item>
+        <item>鱼</item>
+        <item>脚</item>
+        <item>梗</item>
+    </string-array>
+    <string-array name="ad_drawer_game_names">
+        <item>宇宙梦幻球</item>
+        <item>旋风甲壳虫</item>
+        <item>战区英雄</item>
+        <item>旅行世界</item>
+        <item>超级奶牛</item>
+        <item>别踩小方块</item>
+    </string-array>
+    <string-array name="ad_drawer_icon_texts">
+        <item>宇</item>
+        <item>虫</item>
+        <item>战</item>
+        <item>旅</item>
+        <item>牛</item>
+        <item>方</item>
+    </string-array>
+    <string-array name="ad_banner_game_names">
+        <item>修脚大师</item>
+        <item>削木头贼6</item>
+        <item>炸飞小兔兔</item>
+        <item>钢琴块2</item>
+        <item>超级课代表</item>
+    </string-array>
+    <string-array name="ad_banner_icon_texts">
+        <item>脚</item>
+        <item>剑</item>
+        <item>兔</item>
+        <item>2</item>
+        <item>课</item>
+    </string-array>
+    <string name="sud_gi_language_custom">自定义</string>
+    <string name="sud_gi_language_custom_hint">语言标签，例如 vi-VN</string>
+    <string name="sud_gi_language_custom_empty">语言不能为空</string>
+    <string name="sud_gi_language_custom_invalid">请输入有效的语言标签，例如 vi-VN</string>
+</resources>
