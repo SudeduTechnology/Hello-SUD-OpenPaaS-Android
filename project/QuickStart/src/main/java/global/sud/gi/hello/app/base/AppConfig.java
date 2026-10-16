@@ -4,7 +4,7 @@ public class AppConfig {
     public static final String OP_APP_ID = "2071435303700652034";
     public static final String OP_APP_KEY = "P9vaelwdulzfKoZFmaQAICVFmEsbRAlm";
     public static final String OP_SELECTION_ID = "2109958437529444353";
-    public static String APP_BASE_URL = "https://app.sudedu.com";
+    public static String APP_BASE_URL = "https://app.sudedu.com:17888";
 
     /** GI QuickStart 专用配置，与 OpenPaaS 配置相互独立。 */
     public static final String GI_APP_ID = "1461564080052506636";
