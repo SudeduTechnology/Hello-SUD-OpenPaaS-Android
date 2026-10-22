@@ -399,11 +399,6 @@ Before release, replace demo values, register the final package, keep signing se
 - [App-to-game states (APPFST)](https://docs.sud.tech/en-US/app/Client/APPFST/) — join, ready, team, microphone, and other host states.
 - [Game-to-app states (MGFSM)](https://docs.sud.tech/en-US/app/Client/MGFSM/) — game and player callbacks.
 
-## Examples and source
-
-- [Upstream Chinese README](https://github.com/SudTechnology/Hello-SUD-OpenPaaS-Android/blob/master/zh_README.md)
-- [Project repository](https://github.com/SudTechnology/Hello-SUD-OpenPaaS-Android)
-
 Online documentation changes with the SDK. Use the documentation for the selected SDK version and revalidate APIs, ad dependencies, and keep rules when upgrading.
 
 # Troubleshooting

@@ -590,11 +590,6 @@ cd project
 - [App 向游戏发送状态（APPFST）](https://docs.sud.tech/zh-CN/app/Client/APPFST/)：加入、准备、队伍、麦克风等 App 状态。
 - [游戏向 App 回调状态（MGFSM）](https://docs.sud.tech/zh-CN/app/Client/MGFSM/)：游戏状态和玩家状态回调。
 
-## 示例与源码参考
-
-- [上游中文 README](https://github.com/SudTechnology/Hello-SUD-OpenPaaS-Android/blob/master/zh_README.md)
-- [本项目仓库](https://github.com/SudTechnology/Hello-SUD-OpenPaaS-Android)
-
 在线文档会随 SDK 更新。升级 SDK 前应以对应版本的发布说明和 API 文档为准，并重新验证接口、广告依赖与混淆配置。
 
 # 常见问题
