@@ -6,23 +6,19 @@ public class AppConfig {
 
     private static final String FAT_OP_APP_ID = "2071435303700652034";
     private static final String FAT_OP_APP_KEY = "P9vaelwdulzfKoZFmaQAICVFmEsbRAlm";
-    private static final String FAT_OP_SELECTION_ID = "2114623682101624833";
-    private static final String FAT_APP_BASE_URL = "https://app.sudedu.com:17888";
+    private static final String FAT_OP_SELECTION_ID = "2109958437529444353";
 
     // TODO: 获取正式环境配置后，替换以下四项当前临时复用的 FAT 环境值。
     private static final String PRODUCTION_OP_APP_ID = "2071435303700652034";
     private static final String PRODUCTION_OP_APP_KEY = "P9vaelwdulzfKoZFmaQAICVFmEsbRAlm";
     private static final String PRODUCTION_OP_SELECTION_ID = "2109958437529444353";
-    private static final String PRODUCTION_APP_BASE_URL = "https://app.sudedu.com:17888";
 
     public static final String OP_APP_ID = USE_PRODUCTION ? PRODUCTION_OP_APP_ID : FAT_OP_APP_ID;
     public static final String OP_APP_KEY = USE_PRODUCTION ? PRODUCTION_OP_APP_KEY : FAT_OP_APP_KEY;
     public static final String OP_SELECTION_ID = USE_PRODUCTION
             ? PRODUCTION_OP_SELECTION_ID
             : FAT_OP_SELECTION_ID;
-    public static String APP_BASE_URL = USE_PRODUCTION
-            ? PRODUCTION_APP_BASE_URL
-            : FAT_APP_BASE_URL;
+    public static String APP_BASE_URL = "https://app.sudedu.com:17888";
 
     /** GI QuickStart 专用配置，与 OpenPaaS 配置相互独立。 */
     public static final String GI_APP_ID = "1461564080052506636";
