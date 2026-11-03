@@ -8,6 +8,12 @@ import static org.junit.Assert.assertFalse;
 public class OPApiClientTest {
 
     @Test
+    public void buildsAnonymousLoginRequestWithAppId() {
+        assertEquals("{\"appId\":\"2071435303700652034\"}",
+                OPApiClient.buildLoginRequestJson("2071435303700652034"));
+    }
+
+    @Test
     public void parsesAnonymousLoginResponse() throws Exception {
         OPLoginResponse response = OPApiClient.parseLoginResponse(
                 "{\"appToken\":\"token\",\"appTokenExpiresIn\":3600,"

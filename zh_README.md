@@ -154,7 +154,7 @@ POST /api/auth/login
 POST /api/openpaas/user-signature
 ```
 
-`/api/auth/login` App自己的游客登录接口。使用空 JSON 请求体，并通过 `Idempotency-Key` 避免重复创建游客用户。客户端保存服务端返回的 App Token、有效期与用户资料；本地会话失效时重新登录。
+`/api/auth/login` 是 App 自己的游客登录接口。请求体携带当前配置的 OpenPaaS `appId`，并通过 `Idempotency-Key` 避免重复创建游客用户。客户端保存服务端返回的 App Token、有效期与用户资料；本地会话失效时重新登录。
 
 请求：
 
@@ -163,7 +163,9 @@ POST /api/auth/login HTTP/1.1
 Content-Type: application/json
 Idempotency-Key: <8～200 个字符的稳定随机键>
 
-{}
+{
+  "appId": "YOUR_OP_APP_ID"
+}
 ```
 
 成功返回（`200 OK`，`appTokenExpiresIn` 单位为秒）：

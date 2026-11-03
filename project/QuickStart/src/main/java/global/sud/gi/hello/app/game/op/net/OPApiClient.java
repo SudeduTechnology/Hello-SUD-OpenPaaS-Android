@@ -79,7 +79,7 @@ public class OPApiClient {
             request = new Request.Builder()
                     .url(buildUrl("/api/auth/login"))
                     .header("Idempotency-Key", idempotencyKey)
-                    .post(EMPTY_JSON_BODY)
+                    .post(RequestBody.create(buildLoginRequestJson(AppConfig.OP_APP_ID), JSON))
                     .build();
         } catch (IllegalArgumentException e) {
             postFailure(callback, -1, "Invalid Game server address");
@@ -228,6 +228,10 @@ public class OPApiClient {
         return response;
     }
 
+    static String buildLoginRequestJson(String appId) {
+        return GSON.toJson(new LoginRequest(appId));
+    }
+
     static OPUserSignatureResponse parseUserSignatureResponse(String body) throws Exception {
         UserSignatureEnvelope envelope = GSON.fromJson(body, UserSignatureEnvelope.class);
         if (envelope == null || envelope.user == null) {
@@ -248,6 +252,14 @@ public class OPApiClient {
         User user;
         String userSignature;
         String expiresAt;
+    }
+
+    private static class LoginRequest {
+        final String appId;
+
+        LoginRequest(String appId) {
+            this.appId = appId;
+        }
     }
 
     private static class User {

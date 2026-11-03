@@ -140,7 +140,7 @@ POST /api/auth/login
 POST /api/openpaas/user-signature
 ```
 
-`/api/auth/login` is the application's own guest login endpoint. It sends an empty JSON body and an `Idempotency-Key` to avoid creating duplicate guest users. The returned App Token, expiry, and profile are stored locally; an expired local session triggers a new login.
+`/api/auth/login` is the application's own guest login endpoint. It sends the configured OpenPaaS `appId` and an `Idempotency-Key` to avoid creating duplicate guest users. The returned App Token, expiry, and profile are stored locally; an expired local session triggers a new login.
 
 Request:
 
@@ -149,7 +149,9 @@ POST /api/auth/login HTTP/1.1
 Content-Type: application/json
 Idempotency-Key: <stable-random-key-of-8-to-200-characters>
 
-{}
+{
+  "appId": "YOUR_OP_APP_ID"
+}
 ```
 
 Successful response (`200 OK`; `appTokenExpiresIn` is measured in seconds):
