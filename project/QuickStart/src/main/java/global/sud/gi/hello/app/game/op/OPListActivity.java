@@ -20,8 +20,6 @@ import global.sud.gi.hello.R;
 import global.sud.gi.hello.app.base.AppConfig;
 import global.sud.gi.hello.app.common.base.BaseActivity;
 import global.sud.gi.hello.app.common.utils.LanguageUtils;
-import global.sud.gi.hello.app.game.op.data.OPSession;
-import global.sud.gi.hello.app.game.op.net.OPApiClient;
 import global.sud.gi.hello.app.game.op.repository.OPRepository;
 import global.sud.gi.hello.app.game.op.ui.OPAdapter;
 import global.sud.gi.hello.app.game.op.ui.OPPresentation;
@@ -37,7 +35,6 @@ public class OPListActivity extends BaseActivity {
     private TextView statusView;
     private Button retryButton;
     private OPAdapter adapter;
-    private OPApiClient apiClient;
     private OPRepository gameRepository;
     private int loadGeneration;
     private boolean requestInFlight;
@@ -63,7 +60,6 @@ public class OPListActivity extends BaseActivity {
         adapter = new OPAdapter(LanguageUtils.getLanguageTag(this));
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         recyclerView.setAdapter(adapter);
-        apiClient = new OPApiClient(getApplicationContext());
         gameRepository = new OPRepository();
     }
 
@@ -111,7 +107,7 @@ public class OPListActivity extends BaseActivity {
                 new SUDOPInitSDKListener() {
                     @Override
                     public void onSuccess() {
-                        runIfCurrent(generation, () -> ensureSession(generation));
+                        runIfCurrent(generation, () -> loadGames(generation));
                     }
 
                     @Override
@@ -121,26 +117,6 @@ public class OPListActivity extends BaseActivity {
                     }
                 }
         );
-    }
-
-    private void ensureSession(int generation) {
-        showLoading(R.string.op_preparing_account);
-        apiClient.ensureSession(new OPApiClient.SessionCallback() {
-            @Override
-            public void onSuccess(OPSession session) {
-                if (!canHandle(generation)) {
-                    return;
-                }
-                loadGames(generation);
-            }
-
-            @Override
-            public void onFailure(int code, String message) {
-                if (canHandle(generation)) {
-                    showError(getString(R.string.op_login_failed, code));
-                }
-            }
-        });
     }
 
     private void loadGames(int generation) {
@@ -217,9 +193,6 @@ public class OPListActivity extends BaseActivity {
     protected void onDestroy() {
         loadGeneration++;
         requestInFlight = false;
-        if (apiClient != null) {
-            apiClient.cancelAll();
-        }
         if (gameRepository != null) {
             gameRepository.cancel();
         }

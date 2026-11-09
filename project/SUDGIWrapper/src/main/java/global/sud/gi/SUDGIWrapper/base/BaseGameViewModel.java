@@ -28,6 +28,8 @@ import global.sud.op.runtime.core.model.SUDOPPrivacyConfig;
 
 public abstract class BaseGameViewModel {
 
+    private static volatile boolean authSucceeded;
+
     public Handler handler = new Handler(Looper.getMainLooper());
     protected String gameId;
     protected String gameUrl;
@@ -96,6 +98,10 @@ public abstract class BaseGameViewModel {
         if (activity.isDestroyed() || TextUtils.isEmpty(this.gameId)) {
             return;
         }
+        if (authSucceeded) {
+            loadGame(activity, gameId, gameUrl, gamePkgVersion);
+            return;
+        }
         getCode(activity, getUserId(), getAppId(), new GameGetCodeListener() {
             @Override
             public void onSuccess(String code) {
@@ -132,6 +138,7 @@ public abstract class BaseGameViewModel {
         SUDOP.auth(code, new SUDOPAuthListener() {
             @Override
             public void onSuccess() {
+                authSucceeded = true;
                 loadGame(activity, gameId, gameUrl, gamePkgVersion);
             }
 

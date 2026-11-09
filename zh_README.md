@@ -270,7 +270,6 @@ OPListActivity.start(this);
 
 ```text
 SUDOP.initSDK
-  -> 恢复有效本地会话，或调用 /api/auth/login
   -> SUDOP.getGameList 分页拉取游戏
   -> 按 gameId 去重并显示列表
   -> 用户选择游戏
@@ -290,15 +289,15 @@ gameViewModel.switchGame(this, gameId);
 `OPViewModel` 与 `BaseGameViewModel` 依次完成：
 
 ```text
-请求最新 userSignature
-  -> SUDOP.auth(userSignature)
+检查当前 SDK 周期内 SUDOP.auth 是否已成功
+  -> 未成功时请求最新 userSignature，并调用 SUDOP.auth(userSignature)
   -> SUDOP.startGame(gameId, language, listener)
   -> onGameViewCreated 挂载游戏 View
   -> onCreated 保存句柄、注册 OPWrappedClient、设置方向
   -> onProgress / onSuccess 更新加载状态
 ```
 
-不要缓存并重复使用过期的 `userSignature`。如果接入方不需要 Demo 的匿名登录，应替换 `OPApiClient` 与 `OPSessionStore`，但保留“业务登录态 -> 服务端签名 -> SDK 鉴权”的责任边界。
+`SUDOP.auth` 成功一次后，同一 SDK 周期内后续启动游戏会跳过服务端签名请求和鉴权调用。不要缓存并重复使用过期的 `userSignature`。如果接入方不需要 Demo 的匿名登录，应替换 `OPApiClient` 与 `OPSessionStore`，但保留“业务登录态 -> 服务端签名 -> SDK 鉴权”的责任边界。
 
 ## 8. 生命周期与退出
 

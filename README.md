@@ -224,7 +224,6 @@ OPListActivity.start(this);
 
 ```text
 SUDOP.initSDK
-  -> restore a valid session or POST /api/auth/login
   -> fetch every SUDOP.getGameList page
   -> deduplicate by gameId and render the catalog
   -> OPActivity.start(context, gameId, gameName)
@@ -239,15 +238,15 @@ gameViewModel.switchGame(this, gameId);
 ```
 
 ```text
-request a fresh userSignature
-  -> SUDOP.auth(userSignature)
+check whether SUDOP.auth has already succeeded in this SDK lifecycle
+  -> if not, request a fresh userSignature and call SUDOP.auth(userSignature)
   -> SUDOP.startGame(gameId, language, listener)
   -> mount the View from onGameViewCreated
   -> save the handle, register OPWrappedClient, and set orientation
   -> update loading through onProgress / onSuccess
 ```
 
-Do not cache an expired `userSignature`. If anonymous demo login is not appropriate, replace `OPApiClient` and `OPSessionStore` while preserving business login -> backend signature -> SDK authentication.
+After `SUDOP.auth` succeeds once, later game launches in the same SDK lifecycle skip the backend signature request and authentication call. Do not cache an expired `userSignature`. If anonymous demo login is not appropriate, replace `OPApiClient` and `OPSessionStore` while preserving business login -> backend signature -> SDK authentication.
 
 ## OP lifecycle and migration
 
