@@ -18,6 +18,7 @@
     <string name="audio_chat_hint">Say something…</string>
     <string name="audio_gameing">In game</string>
     <string name="close_game">Close game</string>
+    <string name="game_more">More</string>
     <string name="room_name">Let’s play together</string>
     <string name="enter">Enter</string>
     <string name="room_number">Room number</string>

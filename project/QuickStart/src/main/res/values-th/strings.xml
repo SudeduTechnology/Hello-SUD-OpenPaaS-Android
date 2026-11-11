@@ -18,6 +18,7 @@
     <string name="audio_chat_hint">พูดอะไรสักหน่อย…</string>
     <string name="audio_gameing">กำลังเล่นเกม</string>
     <string name="close_game">ปิดเกม</string>
+    <string name="game_more">เพิ่มเติม</string>
     <string name="room_name">มาเล่นด้วยกัน</string>
     <string name="enter">เข้า</string>
     <string name="room_number">หมายเลขห้อง</string>

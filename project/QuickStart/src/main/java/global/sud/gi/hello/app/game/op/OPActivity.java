@@ -5,12 +5,15 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.activity.OnBackPressedCallback;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.gyf.immersionbar.BarHide;
 import com.gyf.immersionbar.ImmersionBar;
@@ -18,7 +21,6 @@ import com.gyf.immersionbar.ImmersionBar;
 import global.sud.gi.SUDGIWrapper.base.BaseGameViewModel;
 import global.sud.gi.hello.R;
 import global.sud.gi.hello.app.common.base.BaseActivity;
-import global.sud.gi.hello.app.common.utils.ViewUtils;
 import me.jessyan.autosize.AutoSize;
 import me.jessyan.autosize.internal.CustomAdapt;
 
@@ -70,10 +72,29 @@ public class OPActivity extends BaseActivity implements CustomAdapt {
         loadingContainer = findViewById(R.id.op_game_loading);
         loadingText = findViewById(R.id.op_game_loading_text);
         menuButton = findViewById(R.id.op_game_menu);
-        TextView title = findViewById(R.id.op_game_title);
-        title.setText(TextUtils.isEmpty(gameName) ? getString(R.string.op_game_title) : gameName);
-        ViewUtils.addMarginTop(menuButton, ImmersionBar.getStatusBarHeight(this));
+        applyMenuButtonWindowInsets();
         gameViewModel = new OPViewModel(this);
+    }
+
+    /** Keep the capsule below the status bar and display cutout in immersive mode. */
+    private void applyMenuButtonWindowInsets() {
+        final int spacing = getResources().getDimensionPixelSize(
+                R.dimen.game_capsule_top_spacing);
+        ViewCompat.setOnApplyWindowInsetsListener(menuButton, (view, windowInsets) -> {
+            int safeTop = windowInsets.getInsetsIgnoringVisibility(
+                    WindowInsetsCompat.Type.statusBars()
+                            | WindowInsetsCompat.Type.displayCutout()
+            ).top;
+            ViewGroup.MarginLayoutParams layoutParams =
+                    (ViewGroup.MarginLayoutParams) view.getLayoutParams();
+            int desiredTopMargin = safeTop + spacing;
+            if (layoutParams.topMargin != desiredTopMargin) {
+                layoutParams.topMargin = desiredTopMargin;
+                view.setLayoutParams(layoutParams);
+            }
+            return windowInsets;
+        });
+        ViewCompat.requestApplyInsets(menuButton);
     }
 
     @Override

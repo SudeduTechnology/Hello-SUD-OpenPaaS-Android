@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="game_capsule_width">86dp</dimen>
+    <dimen name="game_capsule_height">32dp</dimen>
+    <dimen name="game_capsule_top_spacing">8dp</dimen>
+    <dimen name="game_capsule_end_spacing">12dp</dimen>
+</resources>

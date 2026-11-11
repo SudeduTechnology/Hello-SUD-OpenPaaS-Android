@@ -42,40 +42,14 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <include
         android:id="@+id/op_game_menu"
-        android:layout_width="wrap_content"
-        android:layout_height="36dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/shape_game_top_container_bg"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingStart="12dp"
-        android:paddingEnd="4dp"
+        layout="@layout/view_game_capsule"
+        android:layout_width="@dimen/game_capsule_width"
+        android:layout_height="@dimen/game_capsule_height"
+        android:layout_marginTop="@dimen/game_capsule_top_spacing"
+        android:layout_marginEnd="@dimen/game_capsule_end_spacing"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/op_game_title"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:ellipsize="end"
-            android:gravity="center_vertical"
-            android:maxWidth="150dp"
-            android:maxLines="1"
-            android:text="@string/op_game_title"
-            android:textColor="#13141A"
-            android:textSize="13sp" />
-
-        <ImageView
-            android:id="@+id/op_game_close"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:contentDescription="@string/close_game"
-            android:padding="7dp"
-            android:src="@drawable/ic_close" />
-
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

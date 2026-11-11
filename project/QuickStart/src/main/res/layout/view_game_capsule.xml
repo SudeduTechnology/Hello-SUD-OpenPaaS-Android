@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_capsule_controls"
+    android:layout_width="@dimen/game_capsule_width"
+    android:layout_height="@dimen/game_capsule_height"
+    android:background="@drawable/shape_game_capsule"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/op_game_more"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:contentDescription="@string/game_more"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_game_capsule_more" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="16dp"
+        android:background="#14000000" />
+
+    <FrameLayout
+        android:id="@+id/op_game_close"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:contentDescription="@string/close_game"
+        android:focusable="true">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_game_capsule_exit" />
+    </FrameLayout>
+</LinearLayout>
