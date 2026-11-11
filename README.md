@@ -120,16 +120,24 @@ Main layouts are `activity_op_list.xml`, `activity_op.xml`, and `item_op.xml`.
 Update `project/QuickStart/src/main/java/global/sud/gi/hello/app/base/AppConfig.java`:
 
 ```java
-public static final String OP_APP_ID = "YOUR_OP_APP_ID";
-public static final String OP_APP_KEY = "YOUR_OP_APP_KEY";
-public static final String OP_SELECTION_ID = "YOUR_SELECTION_ID";
+public static final boolean USE_PRODUCTION = false;
+
+private static final String FAT_OP_APP_ID = "YOUR_FAT_OP_APP_ID";
+private static final String FAT_OP_APP_KEY = "YOUR_FAT_OP_APP_KEY";
+private static final String FAT_OP_SELECTION_ID = "YOUR_FAT_SELECTION_ID";
+
+private static final String PRODUCTION_OP_APP_ID = "YOUR_PRODUCTION_OP_APP_ID";
+private static final String PRODUCTION_OP_APP_KEY = "YOUR_PRODUCTION_OP_APP_KEY";
+private static final String PRODUCTION_OP_SELECTION_ID = "YOUR_PRODUCTION_SELECTION_ID";
+
 public static String APP_BASE_URL = "https://your-app-server.example.com";
 ```
 
-- `OP_APP_ID` and `OP_APP_KEY` initialize SUDOP and must match the registered Android app.
-- `OP_SELECTION_ID` scopes the catalog. An empty value uses the overload without a selection ID.
+- `USE_PRODUCTION` selects the OP credentials and SDK environment together: `false` uses FAT and `true` uses production.
+- Each environment's App ID and App Key initialize SUDOP and must match the Android app registered in that environment.
+- Each environment's selection ID scopes the catalog. An empty value uses the overload without a selection ID.
 - `APP_BASE_URL` is the application's own backend address.
-- Replace demo values and register the production `applicationId` before release.
+- Replace demo values, verify the backend matches the selected environment, and register the production `applicationId` before release.
 
 ## Application backend
 

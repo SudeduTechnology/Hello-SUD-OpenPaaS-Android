@@ -2,16 +2,17 @@ package global.sud.gi.hello.app.base;
 
 public class AppConfig {
     /** false 使用 FAT 环境，true 使用正式环境。 */
-    private static final boolean USE_PRODUCTION = false;
+    public static final boolean USE_PRODUCTION = false;
 
+    // FAT 环境配置
     private static final String FAT_OP_APP_ID = "2071435303700652034";
     private static final String FAT_OP_APP_KEY = "P9vaelwdulzfKoZFmaQAICVFmEsbRAlm";
     private static final String FAT_OP_SELECTION_ID = "2109958437529444353";
 
-    // TODO: 获取正式环境配置后，替换以下四项当前临时复用的 FAT 环境值。
-    private static final String PRODUCTION_OP_APP_ID = "2071435303700652034";
-    private static final String PRODUCTION_OP_APP_KEY = "P9vaelwdulzfKoZFmaQAICVFmEsbRAlm";
-    private static final String PRODUCTION_OP_SELECTION_ID = "2109958437529444353";
+    // 正式环境配置
+    private static final String PRODUCTION_OP_APP_ID = "2116098331538018305";
+    private static final String PRODUCTION_OP_APP_KEY = "lBWiEQLEV2ZO9ZkN6cqBJ60Knw9hXvev";
+    private static final String PRODUCTION_OP_SELECTION_ID = "2118625361745203201";
 
     public static final String OP_APP_ID = USE_PRODUCTION ? PRODUCTION_OP_APP_ID : FAT_OP_APP_ID;
     public static final String OP_APP_KEY = USE_PRODUCTION ? PRODUCTION_OP_APP_KEY : FAT_OP_APP_KEY;

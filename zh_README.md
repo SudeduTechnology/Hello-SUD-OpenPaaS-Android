@@ -134,16 +134,24 @@ project/QuickStart/src/main/res/layout/item_op.xml
 在 `project/QuickStart/src/main/java/global/sud/gi/hello/app/base/AppConfig.java` 中配置：
 
 ```java
-public static final String OP_APP_ID = "YOUR_OP_APP_ID";
-public static final String OP_APP_KEY = "YOUR_OP_APP_KEY";
-public static final String OP_SELECTION_ID = "YOUR_SELECTION_ID";
+public static final boolean USE_PRODUCTION = false;
+
+private static final String FAT_OP_APP_ID = "YOUR_FAT_OP_APP_ID";
+private static final String FAT_OP_APP_KEY = "YOUR_FAT_OP_APP_KEY";
+private static final String FAT_OP_SELECTION_ID = "YOUR_FAT_SELECTION_ID";
+
+private static final String PRODUCTION_OP_APP_ID = "YOUR_PRODUCTION_OP_APP_ID";
+private static final String PRODUCTION_OP_APP_KEY = "YOUR_PRODUCTION_OP_APP_KEY";
+private static final String PRODUCTION_OP_SELECTION_ID = "YOUR_PRODUCTION_SELECTION_ID";
+
 public static String APP_BASE_URL = "https://your-app-server.example.com";
 ```
 
-- `OP_APP_ID`、`OP_APP_KEY`：初始化 SUDOP SDK，必须与控制台中的 Android 应用一致。
-- `OP_SELECTION_ID`：选品 ID；传空字符串时调用不带选品 ID 的游戏列表接口。
+- `USE_PRODUCTION`：同时切换 OP 凭证和 SDK 环境；`false` 使用 FAT 环境，`true` 使用正式环境。
+- 各环境的 App ID、App Key 用于初始化 SUDOP，必须与对应环境控制台中的 Android 应用一致。
+- 各环境的选品 ID 用于限定游戏列表；传空字符串时调用不带选品 ID 的游戏列表接口。
 - `APP_BASE_URL`：自己的业务服务端地址。
-- Demo 参数仅用于示例；正式接入前必须替换，并在控制台登记正式 `applicationId`。
+- Demo 参数仅用于示例；正式接入前必须替换、确认业务服务端与所选环境一致，并在控制台登记正式 `applicationId`。
 
 ## 4. 对接业务服务端
 
