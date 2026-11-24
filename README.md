@@ -31,7 +31,7 @@ The paths share selected host capabilities from `SUDGIWrapper`, but use differen
 - compileSdk 36, targetSdk 36, and minSdk 26
 - Java 8 source compatibility
 
-The shared SDK version is declared in `project/SUDGIWrapper/build.gradle`; the current value is `2.1.0`.
+The shared SDK version is declared in `project/SUDGIWrapper/build.gradle`; the current value is `3.0.0`.
 
 ## Run the demo
 

@@ -18,6 +18,7 @@ import org.robolectric.Shadows;
 import org.robolectric.android.controller.ActivityController;
 import org.robolectric.annotation.Config;
 
+import global.sud.gi.core.SUDGI;
 import global.sud.gi.hello.BuildConfig;
 import global.sud.gi.hello.R;
 import global.sud.gi.hello.app.common.utils.GlobalSP;
@@ -46,10 +47,10 @@ public class MainActivityEnvironmentTest {
     }
 
     @Test
-    public void headerShowsPackagedVersions() throws Exception {
+    public void headerShowsPackagedVersions() {
         controller = Robolectric.buildActivity(MainActivity.class).create().start().resume();
         TextView buildInfo = controller.get().findViewById(R.id.sud_demo_build_info);
-        String aarVersion = String.valueOf(Class.forName("global.sud.mediation.version.Version").getField("kVersion").get(null));
+        String aarVersion = SUDGI.getVersion();
         assertEquals("APK: " + BuildConfig.VERSION_NAME + " " + BuildConfig.BUILD_TYPE + "\nAAR: " + aarVersion, buildInfo.getText().toString());
     }
 

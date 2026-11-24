@@ -3,6 +3,7 @@ package global.sud.gi.hello.app.ui.main;
 import android.content.Intent;
 import android.widget.TextView;
 
+import global.sud.gi.core.SUDGI;
 import global.sud.gi.hello.BuildConfig;
 import global.sud.gi.hello.R;
 import global.sud.gi.hello.app.common.base.BaseActivity;
@@ -24,7 +25,7 @@ public class MainActivity extends BaseActivity {
     protected void initWidget() {
         super.initWidget();
         TextView buildInfoView = findViewById(R.id.sud_demo_build_info);
-        buildInfoView.setText("APK: " + BuildConfig.VERSION_NAME + " " + BuildConfig.BUILD_TYPE + "\nAAR: " + getSUDMAarVersion());
+        buildInfoView.setText("APK: " + BuildConfig.VERSION_NAME + " " + BuildConfig.BUILD_TYPE + "\nAAR: " + SUDGI.getVersion());
     }
 
     @Override
@@ -43,15 +44,6 @@ public class MainActivity extends BaseActivity {
         TextView languageEntry = findViewById(R.id.sud_gi_language_entry);
         languageEntry.setText(getString(R.string.sud_gi_language_entry,
                 SUDGILanguageConfig.getSelectedLabel(this)));
-    }
-
-    private String getSUDMAarVersion() {
-        try {
-            Class<?> versionClass = Class.forName("global.sud.mediation.version.Version");
-            return String.valueOf(versionClass.getField("kVersion").get(null));
-        } catch (ReflectiveOperationException | LinkageError e) {
-            return "not included";
-        }
     }
 
 }
